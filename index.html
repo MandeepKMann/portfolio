@@ -39,8 +39,7 @@
     </header>
     
     <!-- Main -->
-    <main>
-
+    <main id="mainContent">
         <!-- About Seciton -->
         <section id="about">
             <div class="wrapper">
@@ -77,12 +76,71 @@
         <section id="portfolio">
             <div class="wrapper">
                 <h2>i made this (:</h2>
+                <!-- List of Projects -->
                 <ul class="portfolioUl">
-                    <li></li>
-                    <li></li>
+                    <!-- Project 1 -->
+                    <li>
+                        <div class="projectContainer">
+                            <div class="projectImgContainer">
+                                <img src="" alt="">
+                            </div>
+                            <div class="projectTextContainer">
+                                <h3>project name</h3>
+                                <p>project description</p>
+                                <p class="live"><a href="">Live</a></p>
+                                <p class="gitHub"><a href="">GitHub</a></p>
+                                <p>tools used</p>
+                            </div>
+                        </div>
+                    </li>
+                    <!-- Project 2 -->
+                    <li>
+                        <div class="projectContainer">
+                            <div class="projectImgContainer">
+                                <img src="" alt="">
+                            </div>
+                            <div class="projectTextContainer">
+                                <h3>project name</h3>
+                                <p>project description</p>
+                                <p class="live"><a href="">Live</a></p>
+                                <p class="gitHub"><a href="">GitHub</a></p>
+                                <p>tools used</p>
+                            </div>
+                        </div>
+                    </li>
                 </ul>
             </div>
+        </section>
 
+        <!-- Contact Section -->
+        <section id="contact">
+            <div class="wrapper">
+                <h2>Contact</h2>
+                <div class="contactInfo">
+                    <p></p>
+                    <p><a href="mailto:mandeepkrmann@gmail.com">mandeepkrmann@gmail.com</a></p>
+                    <ul>
+                        <li><a href="https://github.com/MandeepKMann"><i class="devicon-github-original"></i></a></li>
+                        <li><a href="https://www.linkedin.com/in/mandeepkmann/"></a><i class="devicon-linkedin-plain"></i></li>
+                    </ul>
+                </div>
+
+                <div class="formContainer">
+                    <form action="" method="" class="contactForm" name="contactForm">
+                        <label for="name" class="sr-only">Name</label>
+                        <input type="text" id="name" placeholder="Name">
+                        
+                        <label for="email" class="sr-only">Email</label>
+                        <input type="email" id="email" placeholder="Email address">
+                        
+                        <label for="message" class="sr-only">Message</label>
+                        <textarea name="message" id="message" cols="30" rows="8" placeholder="Message"></textarea>
+                        
+                        <button>Send</button>
+
+                    </form>
+                </div>
+            </div>
         </section>
 
     </main>
