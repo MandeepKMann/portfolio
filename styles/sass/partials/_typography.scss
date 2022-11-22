@@ -1,6 +1,7 @@
 @use "./variables";
 
-// import fonts
+// Roboto Regular, Roboto Bold
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
 
 // Typography Styles
 html {
@@ -9,7 +10,21 @@ html {
 }
 
 body {
-    // font family
+    font-family: variables.$bodyFont;
     font-size: 1rem;
-    // color
+    color: variables.$baseFontColour;
+}
+
+h1,
+h2,
+h3,
+h4,
+a,
+p {
+    font-family: variables.$bodyFont;
+    font-weight: normal;
+}
+
+.logo a {
+    font-weight: bold;
 }
