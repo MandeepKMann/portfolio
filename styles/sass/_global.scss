@@ -1,0 +1,25 @@
+@use "./variables";
+
+// Wrapper
+.wrapper {
+    width: 80%;
+    margin: 0 auto;
+    max-width: 1260px;
+}
+
+button {
+    cursor: pointer;
+}
+
+a {
+    text-decoration: none;
+}
+
+img {
+    max-width: 100%;
+    display: block;
+}
+
+ul {
+    list-style: none;
+}
