@@ -4,7 +4,13 @@
 .wrapper {
     width: 80%;
     margin: 0 auto;
-    max-width: 1260px;
+    max-width: 1920px;
+}
+
+.navWrapper {
+    width: 90%;
+    margin: 0 auto;
+    max-width: 1920px;
 }
 
 button {
@@ -22,4 +28,5 @@ img {
 
 ul {
     list-style: none;
+    padding-left: 0px;
 }

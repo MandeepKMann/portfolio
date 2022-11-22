@@ -1,5 +1,9 @@
 // Basic Styles
-@use "./partials/setup";
-@use "./partials/variables";
-@use "./partials/typography";
-@use "./partials/global";
+@use './partials/setup';
+@use './partials/variables';
+@use './partials/typography';
+@use './partials/global';
+
+// Header Styles
+@use './partials/headerStyles/header';
+@use './partials/headerStyles/nav';

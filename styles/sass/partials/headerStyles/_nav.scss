@@ -1,0 +1,19 @@
+@use '../variables';
+
+nav {
+    background-color: #7776BC;
+}
+
+.navFlex {
+    display: flex;
+    justify-content: space-between;
+        .navUl {
+            display: flex;
+            gap: 30px;
+            align-items: center;
+        }
+}
+
+.scrollDown {
+    padding: 10px;
+}

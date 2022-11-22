@@ -1,0 +1,22 @@
+@use '../variables';
+
+.hero {
+    height: 91.2vh;
+    background-color: #CDC7E5;
+        .heroFlex {
+            display: flex;
+            flex-direction: column;
+            height: 100%;
+            text-align: center;
+            align-items: center;
+            justify-content: space-between;
+                .heroTextContainer {
+                    margin-top: 25%;
+                }
+                .toContact {
+                    width: 200px;
+                    height: 60px;
+                }
+        }
+}
+

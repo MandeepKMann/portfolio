@@ -22,9 +22,28 @@ h4,
 a,
 p {
     font-family: variables.$bodyFont;
+    color: white;
     font-weight: normal;
 }
 
+h1 {
+    font-weight: bold;
+    font-size: 4rem;
+}
+
+a {
+        &:hover,
+        &:focus {
+            color: #FFEC51;
+        }
+}
+
 .logo a {
+    font-weight: bold;
+    font-size: 1.8rem;
+}
+
+.hero p {
+    font-size: 1.5rem;
     font-weight: bold;
 }
