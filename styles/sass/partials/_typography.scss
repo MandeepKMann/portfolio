@@ -22,7 +22,7 @@ h4,
 a,
 p {
     font-family: variables.$bodyFont;
-    color: white;
+    color: black;
     font-weight: normal;
 }
 
@@ -31,7 +31,24 @@ h1 {
     font-size: 4rem;
 }
 
+h2 {
+    font-weight: bold;
+    color: #7776BC;
+    font-size: 2rem;
+}
+
+h4 {
+    font-weight: bold;
+    font-size: 1.4rem;
+}
+
+i {
+    color: #757BC8;
+    font-size: 5rem;
+}
+
 a {
+    color: white;
         &:hover,
         &:focus {
             color: #FFEC51;

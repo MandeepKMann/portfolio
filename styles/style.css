@@ -260,7 +260,7 @@ h4,
 a,
 p {
   font-family: "Roboto";
-  color: white;
+  color: black;
   font-weight: normal;
 }
 
@@ -269,6 +269,25 @@ h1 {
   font-size: 4rem;
 }
 
+h2 {
+  font-weight: bold;
+  color: #7776BC;
+  font-size: 2rem;
+}
+
+h4 {
+  font-weight: bold;
+  font-size: 1.4rem;
+}
+
+i {
+  color: #757BC8;
+  font-size: 5rem;
+}
+
+a {
+  color: white;
+}
 a:hover, a:focus {
   color: #FFEC51;
 }
@@ -366,4 +385,37 @@ nav {
 
 .scrollDown {
   padding: 10px;
+}
+
+.about {
+  padding: 50px 0 50px 0;
+  background-color: #FFFBDB;
+}
+
+.aboutFlex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.aboutTextContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.skillsUl {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
