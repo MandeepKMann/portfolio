@@ -1,6 +1,17 @@
 @use '../variables';
 
+.skills {
+    padding: 50px 0 50px 0;
+}
+
 .skillsUl {
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
+    gap: 30px;
+        li {
+            width: calc((100% / 5) - 60px);
+            display: flex;
+            justify-content: center;
+        }
 }

@@ -29,6 +29,7 @@ p {
 h1 {
     font-weight: bold;
     font-size: 4rem;
+    color: white;
 }
 
 h2 {
@@ -42,7 +43,7 @@ h4 {
     font-size: 1.4rem;
 }
 
-i {
+.skillsUl i {
     color: #757BC8;
     font-size: 5rem;
 }
@@ -60,7 +61,17 @@ a {
     font-size: 1.8rem;
 }
 
+.contactLinks a {
+    color: #757BC8;
+    font-size: 2rem;
+}
+
 .hero p {
     font-size: 1.5rem;
     font-weight: bold;
+    color: white;
+}
+
+.highlight {
+    color: #7776BC;
 }

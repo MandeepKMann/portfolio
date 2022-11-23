@@ -1,8 +1,9 @@
 @use '../variables';
 
-nav {
-    background-color: #7776BC;
-}
+// Nav Styles
+// nav {
+//     background-color: #7776BC;
+// }
 
 .navFlex {
     display: flex;
@@ -14,6 +15,14 @@ nav {
         }
 }
 
+// JS Scroll button to next section
 .scrollDown {
     padding: 10px;
+}
+
+// JS Sticky Nav Bar on Scroll
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
 }

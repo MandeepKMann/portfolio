@@ -30,3 +30,25 @@ ul {
     list-style: none;
     padding-left: 0px;
 }
+
+button {
+    width: 200px;
+    height: 60px;
+    border: 2px solid #C042FF;
+    color: #C042FF;
+        &:hover,
+        &:focus {
+            background-color: #FFEC51;
+        }
+}
+
+.toContact {
+    border: 2px solid #C042FF;
+    background-color: #F1F1F8;
+    color: #C042FF;
+    box-shadow: #D37CFF 5px 5px, #DC97FF 10px 10px, #E2A8FF 15px 15px;
+        &:hover,
+        &:focus {
+            background-color: #FFEC51;
+        }
+}

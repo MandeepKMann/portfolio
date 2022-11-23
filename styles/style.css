@@ -267,6 +267,7 @@ p {
 h1 {
   font-weight: bold;
   font-size: 4rem;
+  color: white;
 }
 
 h2 {
@@ -280,7 +281,7 @@ h4 {
   font-size: 1.4rem;
 }
 
-i {
+.skillsUl i {
   color: #757BC8;
   font-size: 5rem;
 }
@@ -297,9 +298,19 @@ a:hover, a:focus {
   font-size: 1.8rem;
 }
 
+.contactLinks a {
+  color: #757BC8;
+  font-size: 2rem;
+}
+
 .hero p {
   font-size: 1.5rem;
   font-weight: bold;
+  color: white;
+}
+
+.highlight {
+  color: #7776BC;
 }
 
 .wrapper {
@@ -332,9 +343,34 @@ ul {
   padding-left: 0px;
 }
 
+button {
+  width: 200px;
+  height: 60px;
+  border: 2px solid #C042FF;
+  color: #C042FF;
+}
+button:hover, button:focus {
+  background-color: #FFEC51;
+}
+
+.toContact {
+  border: 2px solid #C042FF;
+  background-color: #F1F1F8;
+  color: #C042FF;
+  -webkit-box-shadow: #D37CFF 5px 5px, #DC97FF 10px 10px, #E2A8FF 15px 15px;
+          box-shadow: #D37CFF 5px 5px, #DC97FF 10px 10px, #E2A8FF 15px 15px;
+}
+.toContact:hover, .toContact:focus {
+  background-color: #FFEC51;
+}
+
+header {
+  background-color: #D37CFF;
+}
+
 .hero {
   height: 91.2vh;
-  background-color: #CDC7E5;
+  background-color: white;
 }
 .hero .heroFlex {
   display: -webkit-box;
@@ -356,13 +392,14 @@ ul {
 .hero .heroFlex .heroTextContainer {
   margin-top: 25%;
 }
+.hero .heroFlex .heroTextContainer h1,
+.hero .heroFlex .heroTextContainer p {
+  color: white;
+  text-shadow: -1px 1px 1px #AC07FF, 1px 1px 1px #AC07FF, 1px -1px 1px #AC07FF, -1px -1px 1px #AC07FF;
+}
 .hero .heroFlex .toContact {
   width: 200px;
   height: 60px;
-}
-
-nav {
-  background-color: #7776BC;
 }
 
 .navFlex {
@@ -385,6 +422,12 @@ nav {
 
 .scrollDown {
   padding: 10px;
+}
+
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
 }
 
 .about {
@@ -411,11 +454,45 @@ nav {
           flex-direction: column;
 }
 
+.skills {
+  padding: 50px 0 50px 0;
+}
+
 .skillsUl {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  gap: 30px;
+}
+.skillsUl li {
+  width: calc(20% - 60px);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.portfolio {
+  padding: 50px 0 50px 0;
+  background-color: #FFFBDB;
+}
+
+.portfolioUl {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  gap: 15px;
+}
+.portfolioUl li {
+  width: calc(33.3333333333% - 30px);
 }
