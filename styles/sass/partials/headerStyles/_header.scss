@@ -2,7 +2,7 @@
 
 // Header Styles
 header {
-    background-color: #D37CFF;
+    background-color: #757BC8;
 }
 .hero {
     height: 91.2vh;
@@ -15,20 +15,16 @@ header {
             align-items: center;
             justify-content: space-between;
                 .heroTextContainer {
-                    margin-top: 25%;
+                    margin-top: 15%;
                         h1, 
                         p {
-                            color: white;
+                            color: #757BC8;
                             text-shadow: -1px 1px 1px #AC07FF,
                                           1px 1px 1px #AC07FF,
                                           1px -1px 1px #AC07FF,
                                          -1px -1px 1px #AC07FF;
                         //https: //www.geeksforgeeks.org/css-font-border/  
                         }
-                }
-                .toContact {
-                    width: 200px;
-                    height: 60px;
                 }
         }
 }

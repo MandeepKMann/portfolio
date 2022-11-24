@@ -26,6 +26,10 @@ p {
     font-weight: normal;
 }
 
+button {
+    font-weight: bold;
+}
+
 h1 {
     font-weight: bold;
     font-size: 4rem;
@@ -38,7 +42,7 @@ h2 {
     font-size: 2rem;
 }
 
-h4 {
+h3, h4 {
     font-weight: bold;
     font-size: 1.4rem;
 }
@@ -50,6 +54,7 @@ h4 {
 
 a {
     color: white;
+    font-weight: bold;
         &:hover,
         &:focus {
             color: #FFEC51;
@@ -74,4 +79,12 @@ a {
 
 .highlight {
     color: #7776BC;
+}
+
+.projectTextOverlay h3,
+.projectTextOverlay p,
+.tools {
+    color: white;
+    text-align: center;
+    padding: 0px 15px 0px 15px;
 }
