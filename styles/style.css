@@ -359,24 +359,9 @@ ul {
 button {
   width: 200px;
   height: 60px;
-  border: 5px solid #757BC8;
+  border: 2px solid #757BC8;
   color: #757BC8;
   background-color: white;
-}
-button:hover, button:focus {
-  background-color: #FFEC51;
-}
-
-.toContact {
-  border-right: 5px solid #757BC8;
-  border-bottom: 5px solid #757BC8;
-  border-top: 1px solid #757BC8;
-  border-left: 1px solid #757BC8;
-  -webkit-box-shadow: #8E94F2 5px 5px, #ADA7FF 10px 10px, #CBB2FE 15px 15px;
-          box-shadow: #8E94F2 5px 5px, #ADA7FF 10px 10px, #CBB2FE 15px 15px;
-}
-.toContact:hover, .toContact:focus {
-  background-color: #FFEC51;
 }
 
 header {
@@ -410,6 +395,33 @@ header {
 .hero .heroFlex .heroTextContainer h1,
 .hero .heroFlex .heroTextContainer p {
   color: #757BC8;
+}
+
+.toContact {
+  border-right: 5px solid #757BC8;
+  border-bottom: 5px solid #757BC8;
+  border-top: 1px solid #757BC8;
+  border-left: 1px solid #757BC8;
+  -webkit-box-shadow: #8E94F2 5px 5px, #ADA7FF 10px 10px, #CBB2FE 15px 15px;
+          box-shadow: #8E94F2 5px 5px, #ADA7FF 10px 10px, #CBB2FE 15px 15px;
+}
+.toContact:hover, .toContact:focus {
+  background-color: #FFEC51;
+}
+
+.scrollDown {
+  border: none;
+  margin-bottom: 1%;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+}
+.scrollDown span {
+  font-size: 4rem;
+  font-weight: bold;
 }
 
 .navFlex {
