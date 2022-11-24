@@ -34,8 +34,9 @@ ul {
 button {
     width: 200px;
     height: 60px;
-    border: 2px solid #C042FF;
-    color: #C042FF;
+    border: 5px solid #757BC8;
+    color: #757BC8;
+    background-color: white;
         &:hover,
         &:focus {
             background-color: #FFEC51;
@@ -43,9 +44,10 @@ button {
 }
 
 .toContact {
-    border: none;
-    background-color: #F1F1F8;
-    color: #C042FF;
+    border-right: 5px solid #757BC8;
+    border-bottom: 5px solid #757BC8;
+    border-top: 1px solid #757BC8;
+    border-left: 1px solid #757BC8;
     box-shadow: #8E94F2 5px 5px, #ADA7FF 10px 10px, #CBB2FE 15px 15px;
         &:hover,
         &:focus {

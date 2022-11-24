@@ -359,17 +359,19 @@ ul {
 button {
   width: 200px;
   height: 60px;
-  border: 2px solid #C042FF;
-  color: #C042FF;
+  border: 5px solid #757BC8;
+  color: #757BC8;
+  background-color: white;
 }
 button:hover, button:focus {
   background-color: #FFEC51;
 }
 
 .toContact {
-  border: none;
-  background-color: #F1F1F8;
-  color: #C042FF;
+  border-right: 5px solid #757BC8;
+  border-bottom: 5px solid #757BC8;
+  border-top: 1px solid #757BC8;
+  border-left: 1px solid #757BC8;
   -webkit-box-shadow: #8E94F2 5px 5px, #ADA7FF 10px 10px, #CBB2FE 15px 15px;
           box-shadow: #8E94F2 5px 5px, #ADA7FF 10px 10px, #CBB2FE 15px 15px;
 }
@@ -408,7 +410,6 @@ header {
 .hero .heroFlex .heroTextContainer h1,
 .hero .heroFlex .heroTextContainer p {
   color: #757BC8;
-  text-shadow: -1px 1px 1px #AC07FF, 1px 1px 1px #AC07FF, 1px -1px 1px #AC07FF, -1px -1px 1px #AC07FF;
 }
 
 .navFlex {
@@ -571,4 +572,63 @@ header {
 
 .projectContainer:hover .projectTextOverlay {
   opacity: 1;
+}
+
+.contact {
+  padding: 50px 0 50px 0;
+  background-color: paleturquoise;
+}
+
+.contactFlex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.mail {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.contactLinks {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.formContainer {
+  width: 80%;
+  border: 5px solid #757BC8;
+  -webkit-box-shadow: #8E94F2 5px 5px, #ADA7FF 10px 10px, #CBB2FE 15px 15px;
+          box-shadow: #8E94F2 5px 5px, #ADA7FF 10px 10px, #CBB2FE 15px 15px;
+  padding: 10px;
+}
+.formContainer h3 {
+  margin-top: 0px;
+}
+
+form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  gap: 10px;
+}
+form input {
+  padding: 5px 0 5px 15px;
+  border: 2px solid purple;
+}
+form textarea {
+  resize: none;
+  padding: 15px 0 0 15px;
+  border: 2px solid purple;
 }
