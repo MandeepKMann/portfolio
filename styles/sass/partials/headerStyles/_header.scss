@@ -53,21 +53,23 @@ header {
         }
 }
 
-#typewriter {
-
-}
-
 #cursor {
     color: #757BC8;
-    animation: blink 1s linear infinite;
+    animation: blink .6s linear infinite alternate;
 }
 
 @keyframes blink {
     0% {
-        opacity: 100%;
+        opacity: 1;
     }
-    50% {
-        opacity: 0%;
+    40% {
+        opacity: 1;
+    }
+    60% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 0;
     }
 }
 
