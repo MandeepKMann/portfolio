@@ -277,7 +277,7 @@ h1 {
 h2 {
   font-weight: bold;
   color: #7776BC;
-  font-size: 2rem;
+  font-size: 2.5rem;
 }
 
 h3, h4 {
@@ -285,9 +285,12 @@ h3, h4 {
   font-size: 1.4rem;
 }
 
-.skillsUl i {
+.skill {
   color: #757BC8;
   font-size: 5rem;
+}
+.skill:hover, .skill:focus {
+  color: #4047A1;
 }
 
 a {
@@ -301,6 +304,11 @@ a:hover, a:focus {
 .logo a {
   font-weight: bold;
   font-size: 1.8rem;
+}
+
+.navUl a {
+  font-size: 1.3rem;
+  padding: 10px;
 }
 
 .contactLinks a {
@@ -497,6 +505,13 @@ nav {
 
 .about {
   background-color: #FFFBDB;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  scroll-margin-top: 80px;
 }
 
 .aboutFlex {
@@ -516,6 +531,11 @@ nav {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  width: 50%;
+}
+
+.aboutImgContainer {
+  width: 30%;
 }
 
 .skillsUl {
@@ -529,7 +549,7 @@ nav {
           justify-content: space-between;
   gap: 30px;
 }
-.skillsUl li {
+.skillsUl .skill {
   width: calc(20% - 60px);
   display: -webkit-box;
   display: -ms-flexbox;

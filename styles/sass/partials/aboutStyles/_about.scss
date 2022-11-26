@@ -2,6 +2,10 @@
 
 .about {
     background-color: #FFFBDB;
+    display: flex;
+    align-items: center;
+    // https: //stackoverflow.com/questions/24665602/scrollintoview-scrolls-just-too-far
+    scroll-margin-top: 80px;
 }
 
 .aboutFlex {
@@ -12,8 +16,9 @@
 .aboutTextContainer {
     display: flex;
     flex-direction: column;
+    width: 50%;
 }
 
 .aboutImgContainer {
-
+    width: 30%;
 }

@@ -39,7 +39,7 @@ h1 {
 h2 {
     font-weight: bold;
     color: #7776BC;
-    font-size: 2rem;
+    font-size: 2.5rem;
 }
 
 h3, h4 {
@@ -47,9 +47,13 @@ h3, h4 {
     font-size: 1.4rem;
 }
 
-.skillsUl i {
+.skill {
     color: #757BC8;
     font-size: 5rem;
+        &:hover,
+        &:focus {
+            color: #4047A1;
+        }
 }
 
 a {
@@ -64,6 +68,11 @@ a {
 .logo a {
     font-weight: bold;
     font-size: 1.8rem;
+}
+
+.navUl a {
+    font-size: 1.3rem;
+    padding: 10px;
 }
 
 .contactLinks a {

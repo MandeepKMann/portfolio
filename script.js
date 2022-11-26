@@ -35,14 +35,14 @@ portfolio.typewriter = () => {
     let sleepTime = 150;
 
     // Current index for the word I want to start at in my array of titles
-    let currentPhraseIndex = 0;
+    let currentWordIndex = 0;
 
     // Async function so it can await the sleep function created above
     const writingLoop = async () => {
         // a while loop to make this function run FOREVER
         while (true) {
             // get access to the words in my array
-            let currentWord = titles[currentPhraseIndex];
+            let currentWord = titles[currentWordIndex];
 
             // loops over every letter in the word
             for (let i = 0; i < currentWord.length; i++) {
@@ -65,10 +65,10 @@ portfolio.typewriter = () => {
             await sleep(sleepTime);
 
             // switching words
-            if (currentPhraseIndex === titles.length - 1) {
-                currentPhraseIndex = 0;
+            if (currentWordIndex === titles.length - 1) {
+                currentWordIndex = 0;
             } else {
-                currentPhraseIndex++;
+                currentWordIndex++;
             }
         }
     }
@@ -83,9 +83,10 @@ portfolio.typewriter = () => {
 portfolio.toContact = () => {
     const contactScroll = document.querySelector('.toContact')
     const contactSection = document.querySelector('#contact')
+    const nav = document.querySelector('.mainNav');
 
     contactScroll.addEventListener('click', () => {
-        contactSection.scrollIntoView({
+        contactSection.scrollIntoView - nav.offsetHeight({
             behavior: "smooth",
             block: "start",
             inline: "nearest"
