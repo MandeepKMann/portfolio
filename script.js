@@ -109,12 +109,52 @@ portfolio.scrollToAbout = () => {
 };
 
 
+// Lightbox/Carousel
+// https://www.youtube.com/watch?v=uKVVSwXdLr0
+// https://www.youtube.com/watch?v=YVUSgLaWVsk
+portfolio.lightbox = () => {
+    // create div and variable and give it an id
+    const lightbox = document.createElement('div');
+    lightbox.id = 'lightbox';
+    // append it to the bodyyyyy
+    document.body.appendChild(lightbox);
+
+    // select projects
+    const projectImg = document.querySelectorAll('.projectImgContainer img')
+    const projectOverlay = document.querySelectorAll('.projectTextOverlay')
+
+    // put an event listener on each project
+    projectOverlay.forEach(project => {
+        project.addEventListener('click', e => {
+            // when clicked, add active class which shows lightbox
+            lightbox.classList.add('active');
+            const img = document.createElement('img');
+            projectImg.forEach(image => {
+                img.src = image.src
+            });
+            
+            while (lightbox.firstChild) {
+                lightbox.removeChild(lightbox.firstChild);
+            }
+            lightbox.appendChild(img);
+        });
+    });
+    lightbox.addEventListener('click', e => {
+    // if click on image, do nothing, if click on lightbox, close
+    if (e.target !== e.currentTarget) return
+    lightbox.classList.remove('active');
+});
+
+}
+
+
 
 portfolio.init = () => {
     portfolio.stickyHeader();
     portfolio.typewriter();
     portfolio.scrollToAbout();
     portfolio.toContact();
+    portfolio.lightbox();
 }
 
 portfolio.init();

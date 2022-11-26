@@ -56,3 +56,26 @@
 .projectContainer:hover .projectTextOverlay {
     opacity: 1;
 }
+
+// Lightbox styles
+#lightbox {
+    position: fixed;
+    z-index: 30;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, .8);
+    display: none;
+}
+
+#lightbox.active {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#lightbox img {
+    max-width: 100%;
+    height: auto;
+    border: 5px solid #757BC8;
+}
