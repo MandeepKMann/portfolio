@@ -122,21 +122,30 @@ portfolio.lightbox = () => {
     // select projects
     const projectImg = document.querySelectorAll('.projectImgContainer img')
     const projectOverlay = document.querySelectorAll('.projectTextOverlay')
+    const projectText = document.querySelectorAll('.lightboxText')
 
     // put an event listener on each project
     projectOverlay.forEach(project => {
         project.addEventListener('click', e => {
             // when clicked, add active class which shows lightbox
             lightbox.classList.add('active');
+            const container = document.createElement('div')
             const img = document.createElement('img');
+            const text = document.createElement('div')
+            projectText.forEach(blurb => {
+                text.innerHTML = blurb.innerHTML
+            })
             projectImg.forEach(image => {
                 img.src = image.src
+                img.alt = image.alt
             });
             
             while (lightbox.firstChild) {
                 lightbox.removeChild(lightbox.firstChild);
             }
-            lightbox.appendChild(img);
+            container.appendChild(img);
+            container.appendChild(text);
+            lightbox.appendChild(container)
         });
     });
     lightbox.addEventListener('click', e => {

@@ -657,9 +657,8 @@ nav {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -669,6 +668,16 @@ nav {
   max-width: 100%;
   height: auto;
   border: 5px solid #757BC8;
+}
+
+.lightboxText {
+  display: none;
+}
+
+.lightboxText.active {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 .contact {
