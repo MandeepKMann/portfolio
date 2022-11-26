@@ -338,6 +338,10 @@ a:hover, a:focus {
   max-width: 1920px;
 }
 
+section {
+  padding: 100px 0 100px 0;
+}
+
 button {
   cursor: pointer;
 }
@@ -365,12 +369,11 @@ button {
 }
 
 header {
-  background-color: #757BC8;
+  background-color: white;
 }
 
 .hero {
-  height: 91.2vh;
-  background-color: white;
+  height: 100vh;
 }
 .hero .heroFlex {
   display: -webkit-box;
@@ -385,12 +388,10 @@ header {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-}
-.hero .heroFlex .heroTextContainer {
-  margin-top: 15%;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  gap: 200px;
 }
 .hero .heroFlex .heroTextContainer h1,
 .hero .heroFlex .heroTextContainer p {
@@ -409,7 +410,8 @@ header {
   background-color: #FFEC51;
 }
 
-.scrollDown {
+.scrollToAbout {
+  padding: 10px;
   border: none;
   margin-bottom: 1%;
   width: -webkit-fit-content;
@@ -419,9 +421,20 @@ header {
   height: -moz-fit-content;
   height: fit-content;
 }
-.scrollDown span {
+.scrollToAbout span {
   font-size: 4rem;
   font-weight: bold;
+}
+
+nav {
+  background-color: #757BC8;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 10;
+  width: 100%;
+  -webkit-transition: all 300ms ease-in-out;
+  transition: all 300ms ease-in-out;
 }
 
 .navFlex {
@@ -442,18 +455,12 @@ header {
           align-items: center;
 }
 
-.scrollDown {
-  padding: 10px;
-}
-
-.sticky {
-  position: fixed;
-  top: 0;
-  width: 100%;
+.mainNav.active {
+  -webkit-box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+          box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
 }
 
 .about {
-  padding: 50px 0 50px 0;
   background-color: #FFFBDB;
 }
 
@@ -474,10 +481,6 @@ header {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-}
-
-.skills {
-  padding: 50px 0 50px 0;
 }
 
 .skillsUl {
@@ -502,7 +505,6 @@ header {
 }
 
 .portfolio {
-  padding: 50px 0 50px 0;
   background-color: #FFFBDB;
 }
 
@@ -587,7 +589,6 @@ header {
 }
 
 .contact {
-  padding: 50px 0 50px 0;
   background-color: paleturquoise;
 }
 

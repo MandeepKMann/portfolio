@@ -2,20 +2,20 @@
 
 // Header Styles
 header {
-    background-color: #757BC8;
-}
-.hero {
-    height: 91.2vh;
     background-color: white;
+}
+
+.hero {
+    height: 100vh;
         .heroFlex {
             display: flex;
             flex-direction: column;
             height: 100%;
             text-align: center;
             align-items: center;
-            justify-content: space-between;
+            justify-content: flex-end;
+            gap: 200px;
                 .heroTextContainer {
-                    margin-top: 15%;
                         h1, 
                         p {
                             color: #757BC8;
@@ -41,7 +41,8 @@ header {
         }
 }
 
-.scrollDown {
+.scrollToAbout {
+    padding: 10px;
     border: none;
     margin-bottom: 1%;
     width: fit-content;
