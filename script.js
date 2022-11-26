@@ -19,15 +19,14 @@ portfolio.stickyHeader = () => {
     })
 }
 
-// portfolio.stickyHeader = () => {
-//     const nav = document.querySelector('nav')
-
-//     window.addEventListener('scroll', () => {
-//         nav.classList.toggle('stickyNav', window.scrollY > 0)
-//     })
+// Typewriter animation on header text
+portfolio.typewriter = () => {
+    const titles = ['a Developer', 'an Educator', 'a Researcher'];
+    const typewriter = document.querySelector('#typewwriter');
     
 
-// }
+
+}
 
 
 // "Get In Touch" button in header that scrolls down to contact secion
@@ -63,6 +62,7 @@ portfolio.scrollToAbout = () => {
 
 portfolio.init = () => {
     portfolio.stickyHeader();
+    portfolio.typewriter();
     portfolio.scrollToAbout();
     portfolio.toContact();
 }

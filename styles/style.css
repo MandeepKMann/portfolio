@@ -426,6 +426,29 @@ header {
   font-weight: bold;
 }
 
+#cursor {
+  color: #757BC8;
+  -webkit-animation: blink 1s linear infinite;
+          animation: blink 1s linear infinite;
+}
+
+@-webkit-keyframes blink {
+  0% {
+    opacity: 100%;
+  }
+  50% {
+    opacity: 0%;
+  }
+}
+
+@keyframes blink {
+  0% {
+    opacity: 100%;
+  }
+  50% {
+    opacity: 0%;
+  }
+}
 nav {
   background-color: #757BC8;
   position: fixed;
