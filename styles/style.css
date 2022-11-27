@@ -637,6 +637,10 @@ nav {
   opacity: 1;
 }
 
+.projectTextOverlay.active {
+  opacity: 1;
+}
+
 .projectLinks {
   display: -webkit-box;
   display: -ms-flexbox;

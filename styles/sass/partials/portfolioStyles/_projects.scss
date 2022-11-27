@@ -54,6 +54,10 @@
     opacity: 1;
 }
 
+.projectTextOverlay.active {
+    opacity: 1;
+}
+
 .projectLinks {
     display: flex;
     justify-content: space-between;

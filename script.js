@@ -109,6 +109,17 @@ portfolio.scrollToAbout = () => {
 };
 
 
+portfolio.hover = () => {
+    const projectContainer = document.querySelectorAll('.projectContainer')
+    const textOverlay = document.querySelectorAll('.projectTextOverlay')
+    const buttons = document.querySelectorAll('.button')
+    buttons.addEventListener('focus', () => {
+        textOverlay.classList.add('active');
+    })
+
+}
+
+
 // Lightbox/Carousel
 // https://www.youtube.com/watch?v=uKVVSwXdLr0
 // https://www.youtube.com/watch?v=YVUSgLaWVsk
@@ -157,6 +168,7 @@ portfolio.init = () => {
     portfolio.scrollToAbout();
     portfolio.toContact();
     // portfolio.lightbox();
+    portfolio.hover();
 }
 
 portfolio.init();
