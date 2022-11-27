@@ -264,6 +264,19 @@ p {
   font-weight: normal;
 }
 
+i {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-item-align: center;
+      align-self: center;
+  color: #7776BC;
+}
+
+.sectionHeading i {
+  font-size: 2rem;
+}
+
 button {
   font-weight: bold;
 }
@@ -332,6 +345,15 @@ a:hover, a:focus {
   color: white;
   text-align: center;
   padding: 0px 15px 0px 15px;
+  font-weight: bold;
+}
+
+.projectLinks a {
+  color: #7776BC;
+  background-color: white;
+}
+.projectLinks a:hover, .projectLinks a:focus {
+  background-color: #FFEC51;
 }
 
 .wrapper {
@@ -379,6 +401,13 @@ button {
   border: 2px solid #757BC8;
   color: #757BC8;
   background-color: white;
+}
+
+.sectionHeading {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 30px;
 }
 
 header {
@@ -545,12 +574,10 @@ nav {
 
 .skillsUl {
   display: grid;
-  grid-template-columns: repeat(5, 100px);
+  grid-template-columns: repeat(5, 1fr);
+  row-gap: 100px;
 }
 .skillsUl .skill {
-  width: -webkit-fit-content;
-  width: -moz-fit-content;
-  width: fit-content;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -567,37 +594,46 @@ nav {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  gap: 20px;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 50px;
 }
 
 .projectContainer {
-  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-shadow: #8E94F2 5px 5px, #ADA7FF 10px 10px, #CBB2FE 15px 15px;
+          box-shadow: #8E94F2 5px 5px, #ADA7FF 10px 10px, #CBB2FE 15px 15px;
 }
 
 .projectImgContainer {
+  background-color: #babce3;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 50%;
+}
+.projectImgContainer img {
   width: 400px;
-  height: 500px;
+  height: 300px;
 }
 
 .projectTextOverlay {
-  opacity: 0;
-  width: 100%;
-  height: 100%;
-  -webkit-box-shadow: #8E94F2 5px 5px, #ADA7FF 10px 10px, #CBB2FE 15px 15px;
-          box-shadow: #8E94F2 5px 5px, #ADA7FF 10px 10px, #CBB2FE 15px 15px;
-  background-color: rgba(0, 0, 0, 0.6);
-  position: absolute;
-  top: 0px;
-  bottom: 0px;
-  left: 0px;
-  right: 0px;
-  -webkit-transition: 0.5s ease;
-  transition: 0.5s ease;
+  width: 50%;
+  background-color: #babce3;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -630,15 +666,6 @@ nav {
   width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
-}
-
-.projectContainer:hover .projectTextOverlay,
-.projectContainer:focus .projectTextOverlay {
-  opacity: 1;
-}
-
-.projectTextOverlay.active {
-  opacity: 1;
 }
 
 .projectLinks {

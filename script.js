@@ -109,15 +109,15 @@ portfolio.scrollToAbout = () => {
 };
 
 
-portfolio.hover = () => {
-    const projectContainer = document.querySelectorAll('.projectContainer')
-    const textOverlay = document.querySelectorAll('.projectTextOverlay')
-    const buttons = document.querySelectorAll('.button')
-    buttons.addEventListener('focus', () => {
-        textOverlay.classList.add('active');
-    })
+// portfolio.hover = () => {
+//     const projectContainer = document.querySelectorAll('.projectContainer')
+//     const textOverlay = document.querySelectorAll('.projectTextOverlay')
+//     const buttons = document.querySelectorAll('.button')
+//     buttons.addEventListener('focus', () => {
+//         textOverlay.classList.add('active');
+//     })
 
-}
+// }
 
 
 // Lightbox/Carousel

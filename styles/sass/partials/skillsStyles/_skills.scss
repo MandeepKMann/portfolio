@@ -1,10 +1,12 @@
 @use '../variables';
 
 .skillsUl {
+    // learned grid from https: //www.youtube.com/watch?v=rg7Fvvl3taU&t=211s
     display: grid;
-    grid-template-columns: repeat(5, 100px);
+    grid-template-columns: repeat(5, 1fr);
+    row-gap: 100px;
         .skill {
-            width: fit-content;
+            // width: fit-content;
             display: flex;
             justify-content: center;
         }
