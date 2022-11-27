@@ -109,6 +109,46 @@ portfolio.scrollToAbout = () => {
 };
 
 
+// Lightbox/Carousel
+// https://www.youtube.com/watch?v=uKVVSwXdLr0
+// https://www.youtube.com/watch?v=YVUSgLaWVsk
+// portfolio.lightbox = () => {
+//     // create div and variable and give it an id
+//     const lightbox = document.createElement('div');
+//     lightbox.id = 'lightbox';
+//     // append it to the bodyyyyy
+//     document.body.appendChild(lightbox);
+
+//     // select projects
+//     const projectLi = document.querySelectorAll('.project')
+//     const projectImg = document.querySelectorAll('.projectImgContainer img')
+//     const projectOverlay = document.querySelectorAll('.projectTextOverlay')
+
+//     projectLi.forEach(project => {
+//     project.addEventListener('click', e => {
+//         lightbox.classList.add('active');
+//         const img = document.createElement('img');
+//         projectImg.forEach(image => {
+//             img.src = image.src
+//         });
+//         // makes it so while one image is clicked, you can't click another and have them both show up (removes img before opening another img)
+//         while (lightbox.firstChild) {
+//             lightbox.removeChild(lightbox.firstChild);
+//         }
+//         // append newly created img to lightbox as child
+//         lightbox.appendChild(img);
+//     });
+// });
+
+// // put event listener on lightbox
+// lightbox.addEventListener('click', e => {
+//     // if click on image, do nothing, if click on lightbox, close
+//     if (e.target !== e.currentTarget) return
+//     lightbox.classList.remove('active');
+// });
+
+// }
+
 
 
 portfolio.init = () => {
@@ -116,7 +156,7 @@ portfolio.init = () => {
     portfolio.typewriter();
     portfolio.scrollToAbout();
     portfolio.toContact();
-
+    // portfolio.lightbox();
 }
 
 portfolio.init();

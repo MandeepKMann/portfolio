@@ -354,6 +354,11 @@ button {
   cursor: pointer;
 }
 
+.button a {
+  border: 2px solid #757BC8;
+  padding: 6px 20px 6px 20px;
+}
+
 a {
   text-decoration: none;
 }
@@ -539,18 +544,13 @@ nav {
 }
 
 .skillsUl {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  gap: 30px;
+  display: grid;
+  grid-template-columns: repeat(5, 100px);
 }
 .skillsUl .skill {
-  width: calc(20% - 60px);
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -632,8 +632,19 @@ nav {
   width: fit-content;
 }
 
-.projectContainer:hover .projectTextOverlay {
+.projectContainer:hover .projectTextOverlay,
+.projectContainer:focus .projectTextOverlay {
   opacity: 1;
+}
+
+.projectLinks {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  gap: 20px;
 }
 
 .contact {

@@ -1,12 +1,10 @@
 @use '../variables';
 
 .skillsUl {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    gap: 30px;
+    display: grid;
+    grid-template-columns: repeat(5, 100px);
         .skill {
-            width: calc((100% / 5) - 60px);
+            width: fit-content;
             display: flex;
             justify-content: center;
         }
