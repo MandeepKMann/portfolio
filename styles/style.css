@@ -294,6 +294,10 @@ h2 {
   text-shadow: 2px 2px 2px #cccccc;
 }
 
+h3 {
+  text-align: center;
+}
+
 h3, h4 {
   font-weight: bold;
   font-size: 1.4rem;
@@ -305,7 +309,7 @@ h3, h4 {
   font-size: 5rem;
 }
 .skill i:hover, .skill i:focus {
-  color: #4047A1;
+  color: #9254BB;
 }
 
 nav a {
@@ -356,6 +360,11 @@ nav a:hover, nav a:focus {
   font-weight: bold;
 }
 
+.projectTextOverlay a {
+  color: #9254BB;
+  font-weight: bold;
+}
+
 .projectLinks a {
   color: #7776BC;
   background-color: white;
@@ -390,10 +399,17 @@ section {
 button {
   cursor: pointer;
 }
+button:hover, button:focus {
+  background-color: #FFF398;
+}
 
 .button a {
-  border: 2px solid #757BC8;
+  border: 3px solid #9254BB;
   padding: 6px 20px 6px 20px;
+  color: #9254BB;
+}
+.button a:hover, .button a:focus {
+  background-color: #FFF398;
 }
 
 a {
@@ -640,8 +656,6 @@ nav {
       -ms-flex-align: center;
           align-items: center;
   width: 30%;
-  width: 400px;
-  height: 300px;
 }
 
 .projectTextOverlay {
@@ -821,9 +835,11 @@ footer {
         -ms-flex-align: center;
             align-items: center;
   }
-  .projectImgContainer {
-    min-width: 400px;
-    min-height: 300px;
+  .projectContainer .projectImgContainer {
+    width: 100%;
+  }
+  .projectContainer .projectTextOverlay p {
+    text-align: center;
   }
 }
 @media (max-width: 600px) {
@@ -832,13 +848,6 @@ footer {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-  }
-}
-@media (max-width: 530px) {
-  .projectImgContainer {
-    min-width: 200px;
-    min-height: 100px;
-    width: 100%;
   }
 }
 @media (max-width: 800px) {

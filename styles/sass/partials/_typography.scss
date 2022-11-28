@@ -53,6 +53,10 @@ h2 {
     text-shadow: 2px 2px 2px #cccccc;
 }
 
+h3 {
+    text-align: center;
+}
+
 h3, h4 {
     font-weight: bold;
     font-size: 1.4rem;
@@ -64,7 +68,7 @@ h3, h4 {
     font-size: 5rem;
         &:hover,
         &:focus {
-            color: #4047A1;
+            color: #9254BB;
         }
 }
 
@@ -114,6 +118,11 @@ nav a {
     color: #757BC8;
     text-align: left;
     padding: 0px 15px 0px 15px;
+    font-weight: bold;
+}
+
+.projectTextOverlay a {
+    color: #9254BB;
     font-weight: bold;
 }
 

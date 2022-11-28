@@ -4,29 +4,17 @@
     .projectContainer {
         flex-direction: column;
         align-items: center;
-    }
-    .projectImgContainer {
-        min-width: 400px;
-        min-height: 300px;
+            .projectImgContainer {
+                width: 100%;
+            }
+            .projectTextOverlay p{
+                text-align: center;
+            }
     }
 }
 
 @media (max-width: 600px) {
     .projectLinks {
         flex-direction: column;
-    }
-}
-
-@media (max-width: 530px) {
-    .projectImgContainer {
-        min-width: 200px;
-        min-height: 100px;
-        width: 100%;
-    }
-}
-
-@media (max-width: 400) {
-    .tools {
-
     }
 }

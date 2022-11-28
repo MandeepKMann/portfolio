@@ -19,11 +19,20 @@ section {
 
 button {
     cursor: pointer;
+        &:hover,
+        &:focus {
+            background-color: #FFF398;
+        }
 }
 
 .button a{
-    border: 2px solid #757BC8;
+    border: 3px solid #9254BB;
     padding: 6px 20px 6px 20px;
+    color: #9254BB;
+        &:hover,
+        &:focus {
+            background-color: #FFF398;
+        }
 }
 
 a {
