@@ -86,13 +86,13 @@ portfolio.toContact = () => {
     const nav = document.querySelector('.mainNav');
 
     contactScroll.addEventListener('click', () => {
-        contactSection.scrollIntoView - nav.offsetHeight({
+        contactSection.scrollIntoView({
             behavior: "smooth",
             block: "start",
             inline: "nearest"
         })
     })
-}
+};
 
 // Chevron pointing down button that scrolls down to next section (about)
 portfolio.scrollToAbout = () => {
