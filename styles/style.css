@@ -291,6 +291,7 @@ h2 {
   font-weight: bold;
   color: #757BC8;
   font-size: 2.5rem;
+  text-shadow: 2px 2px 2px #cccccc;
 }
 
 h3, h4 {
@@ -306,12 +307,12 @@ h3, h4 {
   color: #4047A1;
 }
 
-a {
+nav a {
   color: white;
   font-weight: bold;
 }
-a:hover, a:focus {
-  color: #FFEC51;
+nav a:hover, nav a:focus {
+  color: #FFF398;
 }
 
 .logo a {
@@ -354,6 +355,18 @@ a:hover, a:focus {
 }
 .projectLinks a:hover, .projectLinks a:focus {
   background-color: #FFEC51;
+}
+
+.mail a {
+  color: #7776BC;
+  font-weight: bold;
+}
+
+footer p {
+  font-size: 1rem;
+  font-weight: bold;
+  text-align: center;
+  color: #757BC8;
 }
 
 .wrapper {
@@ -448,7 +461,7 @@ header {
           box-shadow: #8E94F2 5px 5px, #ADA7FF 10px 10px, #CBB2FE 15px 15px;
 }
 .toContact:hover, .toContact:focus {
-  background-color: #FFEC51;
+  background-color: #FFF398;
 }
 
 .scrollToAbout {
@@ -537,7 +550,7 @@ nav {
 }
 
 .about {
-  background-color: #FFFBDB;
+  background-color: #F7EFFE;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -608,23 +621,23 @@ nav {
 }
 
 .projectOdd {
-  background-color: white;
+  background-color: #FAF5FF;
   -webkit-box-shadow: #CBB2FE 5px 5px, #ADA7FF 10px 10px, #8E94F2 15px 15px;
           box-shadow: #CBB2FE 5px 5px, #ADA7FF 10px 10px, #8E94F2 15px 15px;
 }
 
 .projectEven {
-  background-color: white;
+  background-color: #FAF5FF;
   -webkit-box-shadow: #CBB2FE 5px 5px, #ADA7FF 10px 10px, #8E94F2 15px 15px;
           box-shadow: #CBB2FE 5px 5px, #ADA7FF 10px 10px, #8E94F2 15px 15px;
 }
 
 .projectOdd .projectTextOverlay {
-  background-color: white;
+  background-color: #FAF5FF;
 }
 
 .projectEven .projectTextOverlay {
-  background-color: white;
+  background-color: #FAF5FF;
 }
 
 .projectImgContainer {
@@ -695,18 +708,33 @@ nav {
   gap: 20px;
 }
 
-.contact {
-  background-color: paleturquoise;
-  scroll-margin-top: 80px;
-}
-
 .contactFlex {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
-.mail {
+.contactInfo {
+  width: 30%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.contactFlex {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -721,14 +749,21 @@ nav {
 }
 
 .formContainer {
-  width: 80%;
-  border: 5px solid #757BC8;
-  -webkit-box-shadow: #8E94F2 5px 5px, #ADA7FF 10px 10px, #CBB2FE 15px 15px;
-          box-shadow: #8E94F2 5px 5px, #ADA7FF 10px 10px, #CBB2FE 15px 15px;
+  background-color: #F7EFFE;
+  border-right: 5px solid #DDBDFC;
+  border-bottom: 5px solid #DDBDFC;
+  border-top: 1px solid #DDBDFC;
+  border-left: 1px solid #DDBDFC;
+  -webkit-box-shadow: #CBB2FE 5px 5px, #ADA7FF 10px 10px, #8E94F2 15px 15px;
+          box-shadow: #CBB2FE 5px 5px, #ADA7FF 10px 10px, #8E94F2 15px 15px;
   padding: 10px;
 }
 .formContainer h3 {
   margin-top: 0px;
+}
+
+.formContainer {
+  width: 70%;
 }
 
 form {
@@ -746,10 +781,15 @@ form {
 }
 form input {
   padding: 5px 0 5px 15px;
-  border: 2px solid purple;
+  border: 2px solid #757BC8;
 }
 form textarea {
   resize: none;
   padding: 15px 0 0 15px;
-  border: 2px solid purple;
+  border: 2px solid #757BC8;
+}
+
+footer {
+  background-color: #F7EFFE;
+  padding: 10px;
 }

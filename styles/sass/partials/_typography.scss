@@ -50,6 +50,7 @@ h2 {
     font-weight: bold;
     color: #757BC8;
     font-size: 2.5rem;
+    text-shadow: 2px 2px 2px #cccccc;
 }
 
 h3, h4 {
@@ -66,12 +67,12 @@ h3, h4 {
         }
 }
 
-a {
+nav a {
     color: white;
     font-weight: bold;
         &:hover,
         &:focus {
-            color: #FFEC51;
+            color: #FFF398;
         }
 }
 
@@ -116,4 +117,18 @@ a {
         &:focus {
             background-color: #FFEC51;
         }
+}
+
+.mail a {
+    color: #7776BC;
+    font-weight: bold;
+}
+
+
+
+footer p {
+    font-size: 1rem;
+    font-weight: bold;
+    text-align: center;
+    color: #757BC8;
 }

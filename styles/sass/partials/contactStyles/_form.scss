@@ -1,13 +1,26 @@
 @use '../variables';
 
 .formContainer {
-    width: 80%;
-    border: 5px solid #757BC8;
-    box-shadow: #8E94F2 5px 5px, #ADA7FF 10px 10px, #CBB2FE 15px 15px;
+    background-color: #F7EFFE;
+    border-right: 5px solid #DDBDFC;
+    border-bottom: 5px solid #DDBDFC;
+    border-top: 1px solid #DDBDFC;
+    border-left: 1px solid #DDBDFC;
+    box-shadow: #CBB2FE 5px 5px, #ADA7FF 10px 10px, #8E94F2 15px 15px;
+        // border-right: 5px solid #757BC8;
+        //     border-bottom: 5px solid #757BC8;
+        //     border-top: 1px solid #757BC8;
+        //     border-left: 1px solid #757BC8;
+        //     box-shadow: #8E94F2 5px 5px, #ADA7FF 10px 10px, #CBB2FE 15px 15px;
+
     padding: 10px;
     h3 {
         margin-top: 0px;
     }
+}
+
+.formContainer {
+    width: 70%;
 }
 
 form {
@@ -17,11 +30,11 @@ form {
     gap: 10px;
         input {
             padding: 5px 0 5px 15px;
-            border: 2px solid purple;
+            border: 2px solid #757BC8;
         }
         textarea {
             resize: none;
             padding: 15px 0 0 15px;
-            border: 2px solid purple;
+            border: 2px solid #757BC8;
         }
 }

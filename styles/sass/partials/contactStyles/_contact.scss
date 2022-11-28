@@ -1,15 +1,19 @@
 @use '../variables';
 
-.contact {
-    background-color: paleturquoise;
-    scroll-margin-top: 80px;
+.contactFlex {
+    display: flex;
+    justify-content: space-between;
+}
+
+.contactInfo {
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 .contactFlex {
-    display: flex;
-}
-
-.mail {
     display: flex;
 }
 
