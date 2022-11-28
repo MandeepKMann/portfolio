@@ -13,27 +13,8 @@
 .projectContainer {
     display: flex;
     padding: 30px;
-}
-
-
-
-.projectOdd {
-    background-color: #FAF5FF;
-
-    box-shadow: #CBB2FE 5px 5px, #ADA7FF 10px 10px, #8E94F2 15px 15px;
-}
-
-.projectEven {
     background-color: #FAF5FF;
     box-shadow: #CBB2FE 5px 5px, #ADA7FF 10px 10px, #8E94F2 15px 15px;
-}
-
-.projectOdd .projectTextOverlay {
-    background-color: #FAF5FF;
-}
-
-.projectEven .projectTextOverlay {
-    background-color: #FAF5FF;
 }
 
 .projectImgContainer {
@@ -42,15 +23,12 @@
     justify-content: center;
     align-items: center;
     width: 30%;
-        img {
-            max-width: 400px;
-            max-height: 300px;
-        }
+    width: 400px;
+    height: 300px;
 }
 
 .projectTextOverlay {
     width: 70%;
-    background-color: #babce3;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -59,10 +37,10 @@
             display: flex;
             flex-wrap: wrap;
             align-items: center;
-            justify-content: space-between;
-            gap: 15px;
+            justify-content: space-around;
                 li {
                     width: fit-content;
+                    padding: 10px
                 }
         }
 }
@@ -70,5 +48,6 @@
 .projectLinks {
     display: flex;
     justify-content: space-between;
+    align-items: center;
     gap: 20px;
 }
