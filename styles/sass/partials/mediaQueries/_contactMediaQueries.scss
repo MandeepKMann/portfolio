@@ -1,0 +1,23 @@
+@use '../variables';
+
+@media (max-width: 800px) {
+    .contactFlex {
+        flex-direction: column;
+            .contactInfo {
+                width: 100%;
+                    .contactLinks {
+                        width: 100%;
+                        flex-direction: row;
+                        justify-content: flex-end;
+                        gap: 10px;
+                            i {
+                                font-size: 2rem;
+                            }
+                    }
+            }
+            .formContainer {
+                width: 100%;
+            }
+    }
+
+}
