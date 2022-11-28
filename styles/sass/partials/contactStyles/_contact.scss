@@ -3,10 +3,11 @@
 .contactFlex {
     display: flex;
     justify-content: space-between;
+    gap: 20px;
 }
 
 .contactInfo {
-    width: 30%;
+    width: 20%;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -19,5 +20,7 @@
 
 .contactLinks {
     display: flex;
+    flex-direction: column;
     justify-content: space-around;
+    gap: 50px;
 }

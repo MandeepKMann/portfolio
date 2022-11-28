@@ -56,9 +56,10 @@ h2 {
 h3, h4 {
     font-weight: bold;
     font-size: 1.4rem;
+    color: #757BC8;
 }
 
-.skill {
+.skill i {
     color: #757BC8;
     font-size: 5rem;
         &:hover,
@@ -88,7 +89,8 @@ nav a {
 
 .contactLinks a {
     color: #757BC8;
-    font-size: 2rem;
+    font-size: 3rem;
+    padding: 10px;
 }
 
 .hero p {
@@ -97,8 +99,13 @@ nav a {
     color: white;
 }
 
-.highlight {
+.about p {
     color: #7776BC;
+    font-weight: bold;
+}
+
+.highlight {
+    color: #757BC8;
 }
 
 .projectTextOverlay h3,
@@ -118,13 +125,6 @@ nav a {
             background-color: #FFEC51;
         }
 }
-
-.mail a {
-    color: #7776BC;
-    font-weight: bold;
-}
-
-
 
 footer p {
     font-size: 1rem;

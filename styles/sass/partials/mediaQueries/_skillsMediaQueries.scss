@@ -1,0 +1,21 @@
+@use '../variables';
+
+@media (max-width: 800px) {
+    .skillsUl {
+        grid-template-columns: repeat(3, 1fr);
+        row-gap: 60px;
+    }
+}
+
+@media (max-width: 550px) {
+    .skillsUl {
+        grid-template-columns: repeat(2, 1fr);
+        row-gap: 30px;
+    }
+}
+
+@media (max-width: 400px) {
+    .skill i {
+        font-size: 3.5rem;
+    }
+}

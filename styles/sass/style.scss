@@ -23,3 +23,7 @@
 
 // Footer Styles
 @use './partials/footerStyles/footer';
+
+// Media Queries
+@use './partials/mediaQueries/headerMediaQueries';
+@use './partials/mediaQueries/skillsMediaQueries';
