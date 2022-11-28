@@ -1,7 +1,6 @@
 @use '../variables';
 
 .about {
-    // background-color: #FFFBDB;
     background-color: #F7EFFE;
     display: flex;
     align-items: center;
@@ -12,14 +11,20 @@
 .aboutFlex {
     display: flex;
     justify-content: space-between;
+    gap: 50px;
+        .aboutTextContainer {
+            display: flex;
+            flex-direction: column;
+            width: 60%;
+        }
+        .aboutImgContainer {
+            width: 40%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+                img {
+                    box-shadow: #CBB2FE 5px 5px, #ADA7FF 10px 10px, #8E94F2 15px 15px;
+                }
+        }
 }
 
-.aboutTextContainer {
-    display: flex;
-    flex-direction: column;
-    width: 50%;
-}
-
-.aboutImgContainer {
-    width: 30%;
-}

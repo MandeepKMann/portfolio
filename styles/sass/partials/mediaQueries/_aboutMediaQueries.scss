@@ -1,0 +1,27 @@
+@use '../variables';
+
+@media (max-width: 1200px) {
+    .aboutFlex {
+        flex-direction: column;
+            .aboutTextContainer {
+                align-items: center;
+                width: 100%;
+                    h4 {
+                        text-align: center;
+                    }
+            }
+            .aboutImgContainer {
+                order: -1;
+                width: 60%;
+                align-self: center;
+            }
+    }
+}
+
+@media (max-width: 800px) {
+    .aboutFlex {
+        .aboutImgContainer {
+            width: 100%;
+        }
+    }
+}
