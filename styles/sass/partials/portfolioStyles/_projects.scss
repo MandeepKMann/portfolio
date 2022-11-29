@@ -67,7 +67,7 @@
             border: 3px solid variables.$secondaryFontColour;
                 &:hover,
                 &:focus {
-                    background-color: variables.$secondBackground;
+                    background-color: variables.$linksFontColour;
                 }
         }
 }
