@@ -21,6 +21,11 @@ nav {
         }
 }
 
+// Hamburger Menu {
+    .hamburgerMenu {
+        display: none;
+    }
+
 // JS box shadow on Scroll
 .mainNav.active {
     box-shadow: 0 2px 10px rgb(0, 0, 0, 0.3);

@@ -25,6 +25,7 @@
 @use './partials/footerStyles/footer';
 
 // Media Queries
+@use './partials/mediaQueries/globalMediaQueries';
 @use './partials/mediaQueries/headerMediaQueries';
 @use './partials/mediaQueries/aboutMediaQueries';
 @use './partials/mediaQueries/skillsMediaQueries';

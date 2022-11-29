@@ -1,0 +1,7 @@
+@use '../variables';
+
+@media (max-width: 630px) {
+    #toTop.active {
+        display: none;
+    }
+}

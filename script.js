@@ -10,9 +10,32 @@ portfolio.stickyHeader = () => {
             nav.classList.add('active')
         } else {
             nav.classList.remove('active')
-        }
-    })
-}
+        };
+    });
+};
+
+portfolio.hamburgerMenu = () => {
+    const navUl = document.querySelector('.navUl')
+    const closeIcon = document.querySelector('.closeIcon');
+    const hamburgerIcon = document.querySelector('.hamburgerIcon');
+    const menu = document.querySelector('.hamburgerMenu');
+    
+    const toggleMenu = () => {
+        navUl.classList.toggle('active');
+        hamburgerIcon.classList.toggle('active');
+        closeIcon.classList.toggle('active');
+    };
+
+    menu.addEventListener('click', toggleMenu);
+
+    const navLinks = document.querySelectorAll('.navUl a')
+
+    navLinks.forEach(link => {
+        link.addEventListener('click', toggleMenu);
+    });
+};
+
+
 
 // Typewriter animation on header text
 // https://www.youtube.com/watch?v=R846J8LJ6os
@@ -45,7 +68,7 @@ portfolio.typewriter = () => {
                 typewriter.innerText = currentWord.substring(0, i + 1)
                 // pass in sleepTime which is defined above
                 await sleep(sleepTime);
-            }
+            };
 
             // pause before next word for sleepTime x 5
             await sleep(sleepTime * 5);
@@ -54,7 +77,7 @@ portfolio.typewriter = () => {
             for (let i = currentWord.length; i > 0; i--) {
                 typewriter.innerText = currentWord.substring(0, i - 1)
                 await sleep(sleepTime);
-            }
+            };
 
             // a little more sleepy time
             await sleep(sleepTime);
@@ -64,13 +87,13 @@ portfolio.typewriter = () => {
                 currentWordIndex = 0;
             } else {
                 currentWordIndex++;
-            }
-        }
-    }
+            };
+        };
+    };
 
     // Calling my async function
     writingLoop();
-}
+};
 
 
 // "Get In Touch" button in header that scrolls down to contact secion
@@ -85,8 +108,8 @@ portfolio.toContact = () => {
             behavior: "smooth",
             block: "start",
             inline: "nearest"
-        })
-    })
+        });
+    });
 };
 
 // Chevron pointing down button that scrolls down to next section (about)
@@ -100,7 +123,7 @@ portfolio.scrollToAbout = () => {
             block: "start",
             inline: "nearest"
         });
-    })
+    });
 };
 
 // https://help.formspree.io/hc/en-us/articles/1500009404742-How-to-clear-a-form-after-submission
@@ -108,8 +131,8 @@ portfolio.clearForm = () => {
     const contactForm = document.querySelector('#contactForm');
     window.onbeforeunload = () => {
         contactForm.reset();
-    }
-}
+    };
+};
 
 portfolio.scrollToTop = () => {
     const scrollButton = document.createElement('button');
@@ -122,7 +145,7 @@ portfolio.scrollToTop = () => {
             scrollButton.classList.add('active');
         } else {
             scrollButton.classList.remove('active');
-        }
+        };
     });
 
     scrollButton.addEventListener('click', () => {
@@ -132,7 +155,7 @@ portfolio.scrollToTop = () => {
             behavior: "smooth"
         });
     });
-}
+};
   
 
 
@@ -140,12 +163,12 @@ portfolio.scrollToTop = () => {
 
 portfolio.init = () => {
     portfolio.stickyHeader();
+    portfolio.hamburgerMenu();
     portfolio.typewriter();
     portfolio.scrollToAbout();
     portfolio.toContact();
     portfolio.clearForm();
     portfolio.scrollToTop();
-
-}
+};
 
 portfolio.init();
