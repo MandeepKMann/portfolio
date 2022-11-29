@@ -29,7 +29,6 @@ p {
 i {
     display: flex;
     align-self: center;
-    color: #7776BC;
 }
 
 .sectionHeading i  {
@@ -90,18 +89,6 @@ nav a {
     padding: 10px;
 }
 
-.contactLinks a {
-    color: #757BC8;
-    font-size: 3rem;
-    padding: 10px;
-}
-
-.contactLinks i {
-    &:hover,
-    &:focus {
-        color: #D75D86;
-    }
-}
 
 
 .hero p {
@@ -141,12 +128,24 @@ nav a {
 .projectLinks a {
     color: #7776BC;
     background-color: #FAF5FF;
-        &:hover,
-        &:focus {
-            background-color: #FFEC51;
-        }
+    &:hover,
+    &:focus {
+        background-color: #FFEC51;
+    }
+}
+.contactLinks i {
+
 }
 
+.contactLinks a {
+    color: #757BC8;
+    font-size: 3rem;
+    padding: 10px;
+        &:hover,
+        &:focus {
+            color: #D75D86;
+        }
+}
 .formContainer h3 {
     color: #D75D86;
 }

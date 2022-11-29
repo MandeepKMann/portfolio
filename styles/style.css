@@ -270,7 +270,6 @@ i {
   display: flex;
   -ms-flex-item-align: center;
       align-self: center;
-  color: #7776BC;
 }
 
 .sectionHeading i {
@@ -329,16 +328,6 @@ nav a:hover, nav a:focus {
   padding: 10px;
 }
 
-.contactLinks a {
-  color: #757BC8;
-  font-size: 3rem;
-  padding: 10px;
-}
-
-.contactLinks i:hover, .contactLinks i:focus {
-  color: #D75D86;
-}
-
 .hero p {
   font-size: 1.5rem;
   font-weight: bold;
@@ -379,6 +368,15 @@ nav a:hover, nav a:focus {
 }
 .projectLinks a:hover, .projectLinks a:focus {
   background-color: #FFEC51;
+}
+
+.contactLinks a {
+  color: #757BC8;
+  font-size: 3rem;
+  padding: 10px;
+}
+.contactLinks a:hover, .contactLinks a:focus {
+  color: #D75D86;
 }
 
 .formContainer h3 {
@@ -502,6 +500,7 @@ header {
   height: -webkit-fit-content;
   height: -moz-fit-content;
   height: fit-content;
+  background-color: white;
 }
 .scrollToAbout:hover, .scrollToAbout:focus {
   background-color: white;
