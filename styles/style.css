@@ -335,6 +335,10 @@ nav a:hover, nav a:focus {
   padding: 10px;
 }
 
+.contactLinks i:hover, .contactLinks i:focus {
+  color: #D75D86;
+}
+
 .hero p {
   font-size: 1.5rem;
   font-weight: bold;
@@ -375,6 +379,10 @@ nav a:hover, nav a:focus {
 }
 .projectLinks a:hover, .projectLinks a:focus {
   background-color: #FFEC51;
+}
+
+.formContainer h3 {
+  color: #D75D86;
 }
 
 footer p {
@@ -817,12 +825,12 @@ form {
 }
 form input {
   padding: 5px 0 5px 15px;
-  border: 2px solid #757BC8;
+  border: 2px solid #D75D86;
 }
 form textarea {
   resize: none;
   padding: 15px 0 0 15px;
-  border: 2px solid #757BC8;
+  border: 2px solid #D75D86;
 }
 
 footer {

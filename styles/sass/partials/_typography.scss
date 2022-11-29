@@ -96,6 +96,14 @@ nav a {
     padding: 10px;
 }
 
+.contactLinks i {
+    &:hover,
+    &:focus {
+        color: #D75D86;
+    }
+}
+
+
 .hero p {
     font-size: 1.5rem;
     font-weight: bold;
@@ -137,6 +145,10 @@ nav a {
         &:focus {
             background-color: #FFEC51;
         }
+}
+
+.formContainer h3 {
+    color: #D75D86;
 }
 
 footer p {
