@@ -405,7 +405,7 @@ button {
   height: 60px;
   border: 2px solid #D75D86;
   color: #D75D86;
-  background-color: white;
+  background-color: #FAF5FF;
   cursor: pointer;
 }
 button:hover, button:focus {
