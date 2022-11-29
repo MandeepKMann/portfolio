@@ -662,14 +662,14 @@ nav {
   display: flex;
   padding: 30px;
   background-color: #FAF5FF;
-  -webkit-box-shadow: #CBB2FE 5px 5px, #ADA7FF 10px 10px, #8E94F2 15px 15px;
-          box-shadow: #CBB2FE 5px 5px, #ADA7FF 10px 10px, #8E94F2 15px 15px;
   -webkit-transition: 0.7s ease-in-out;
   transition: 0.7s ease-in-out;
+  -webkit-box-shadow: #CBB2FE 5px 5px, #ADA7FF 10px 10px, #8E94F2 15px 15px;
+          box-shadow: #CBB2FE 5px 5px, #ADA7FF 10px 10px, #8E94F2 15px 15px;
 }
 .projectContainer:hover, .projectContainer:focus {
-  -webkit-box-shadow: #CBB2FE 5px 5px, #ADA7FF 10px 10px, #8E94F2 15px 15px, 15px 20px 20px #D75D86;
-          box-shadow: #CBB2FE 5px 5px, #ADA7FF 10px 10px, #8E94F2 15px 15px, 15px 20px 20px #D75D86;
+  -webkit-box-shadow: #CBB2FE 5px 5px, #ADA7FF 10px 10px, #8E94F2 15px 15px, #D75D86 15px 20px 20px;
+          box-shadow: #CBB2FE 5px 5px, #ADA7FF 10px 10px, #8E94F2 15px 15px, #D75D86 15px 20px 20px;
 }
 
 .projectImgContainer {
@@ -793,21 +793,24 @@ nav {
 }
 
 .formContainer {
+  width: 80%;
   background-color: #F7EFFE;
+  padding: 10px;
   border-right: 5px solid #DDBDFC;
   border-bottom: 5px solid #DDBDFC;
   border-top: 1px solid #DDBDFC;
   border-left: 1px solid #DDBDFC;
   -webkit-box-shadow: #CBB2FE 5px 5px, #ADA7FF 10px 10px, #8E94F2 15px 15px;
           box-shadow: #CBB2FE 5px 5px, #ADA7FF 10px 10px, #8E94F2 15px 15px;
-  padding: 10px;
+  -webkit-transition: 0.7s ease-in-out;
+  transition: 0.7s ease-in-out;
+}
+.formContainer:hover, .formContainer:focus {
+  -webkit-box-shadow: #CBB2FE 5px 5px, #ADA7FF 10px 10px, #8E94F2 15px 15px, #D75D86 15px 20px 20px;
+          box-shadow: #CBB2FE 5px 5px, #ADA7FF 10px 10px, #8E94F2 15px 15px, #D75D86 15px 20px 20px;
 }
 .formContainer h3 {
   margin-top: 0px;
-}
-
-.formContainer {
-  width: 80%;
 }
 
 form {

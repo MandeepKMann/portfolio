@@ -15,13 +15,17 @@
     display: flex;
     padding: 30px;
     background-color: #FAF5FF;
-    box-shadow: #CBB2FE 5px 5px, #ADA7FF 10px 10px, #8E94F2 15px 15px;
     transition: .7s ease-in-out;
+    box-shadow: #CBB2FE 5px 5px, 
+                #ADA7FF 10px 10px, 
+                #8E94F2 15px 15px;
         &:hover,
         &:focus {
-            box-shadow: #CBB2FE 5px 5px,
+            box-shadow: 
+                #CBB2FE 5px 5px,
                 #ADA7FF 10px 10px,
-                #8E94F2 15px 15px, 15px 20px 20px #D75D86;
+                #8E94F2 15px 15px, 
+                #D75D86 15px 20px 20px;
         }
 }
 
