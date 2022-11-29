@@ -22,7 +22,6 @@ h4,
 a,
 p {
     font-family: variables.$bodyFont;
-    color: black;
     font-weight: normal;
 }
 
@@ -42,12 +41,11 @@ button {
 h1 {
     font-weight: bold;
     font-size: 4rem;
-    color: #757BC8;
 }
 
 h2 {
     font-weight: bold;
-    color: #D75D86;
+    color: variables.$secondaryFontColour;
     font-size: 2.5rem;
 }
 
@@ -58,24 +56,22 @@ h2 {
 h3, h4 {
     font-weight: bold;
     font-size: 1.4rem;
-    color: #757BC8;
 }
 
 .skill i {
-    color: #757BC8;
     font-size: 5rem;
         &:hover,
         &:focus {
-            color: #D75D86;
+            color: variables.$secondaryFontColour;
         }
 }
 
 nav a {
-    color: white;
+    color: variables.$mainBackground;
     font-weight: bold;
         &:hover,
         &:focus {
-            color: #FFF398;
+            color: variables.$linksFontColour;
         }
 }
 
@@ -94,65 +90,58 @@ nav a {
 .hero p {
     font-size: 1.5rem;
     font-weight: bold;
-    color: white;
+    color: variables.$secondBackground;
 }
 
 .heroTextContainer p,
 .heroTextContainer span {
-    color: #D75D86;
+    color: variables.$secondaryFontColour;
 }
 
 .about p {
-    color: #7776BC;
     font-weight: bold;
 }
 
 .highlight {
-    color: #D75D86;
+    color: variables.$secondaryFontColour;
 }
 
 .projectTextOverlay h3,
 .projectTextOverlay p,
 .tools {
-    color: #757BC8;
     text-align: left;
     padding: 0px 15px 0px 15px;
     font-weight: bold;
 }
 
 .projectTextOverlay a {
-    color: #D75D86;
+    color: variables.$secondaryFontColour;
     font-weight: bold;
 }
 
 .projectLinks a {
-    color: #7776BC;
-    background-color: #FAF5FF;
+    background-color: variables.$secondBackground;
     &:hover,
     &:focus {
-        background-color: #FFEC51;
+        background-color: variables.$linksFontColour;
     }
-}
-.contactLinks i {
-
 }
 
 .contactLinks a {
-    color: #757BC8;
+    color: variables.$baseFontColour;
     font-size: 3rem;
     padding: 10px;
         &:hover,
         &:focus {
-            color: #D75D86;
+            color: variables.$secondaryFontColour;
         }
 }
 .formContainer h3 {
-    color: #D75D86;
+    color: variables.$secondaryFontColour;
 }
 
 footer p {
     font-size: 1rem;
     font-weight: bold;
     text-align: center;
-    color: #757BC8;
 }

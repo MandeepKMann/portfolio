@@ -1,7 +1,7 @@
 @use '../variables';
 
 .about {
-    background-color: #F7EFFE;
+    background-color: variables.$secondBackground;
     display: flex;
     align-items: center;
     // https: //stackoverflow.com/questions/24665602/scrollintoview-scrolls-just-too-far
@@ -23,7 +23,7 @@
             justify-content: center;
             align-items: center;
                 img {
-                    box-shadow: #CBB2FE 5px 5px, #ADA7FF 10px 10px, #8E94F2 15px 15px;
+                    box-shadow: variables.$lightShade 5px 5px, variables.$mediumShade 10px 10px, variables.$darkShade 15px 15px;
                 }
         }
 }

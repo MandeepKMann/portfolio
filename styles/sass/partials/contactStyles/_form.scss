@@ -2,21 +2,21 @@
 
 .formContainer {
     width: 80%;
-    background-color: #F7EFFE;
+    background-color: variables.$secondBackground;
     padding: 10px;
-    border-right: 5px solid #DDBDFC;
-    border-bottom: 5px solid #DDBDFC;
-    border-top: 1px solid #DDBDFC;
-    border-left: 1px solid #DDBDFC;
-    box-shadow: #CBB2FE 5px 5px, #ADA7FF 10px 10px, #8E94F2 15px 15px;
+    border-right: 5px solid variables.$lighterShade;
+    border-bottom: 5px solid variables.$lighterShade;
+    border-top: 1px solid variables.$lighterShade;
+    border-left: 1px solid variables.$lighterShade;
+    box-shadow: variables.$lightShade 5px 5px, variables.$mediumShade 10px 10px, variables.$darkShade 15px 15px;
     transition: .7s ease-in-out;
         &:hover,
         &:focus {
             box-shadow:
-                #CBB2FE 5px 5px,
-                #ADA7FF 10px 10px,
-                #8E94F2 15px 15px,
-                #D75D86 15px 20px 20px;
+                variables.$lightShade 5px 5px,
+                variables.$mediumShade 10px 10px,
+                variables.$darkShade 15px 15px,
+                variables.$secondaryFontColour 15px 20px 20px;
         }
         h3 {
             margin-top: 0px;
@@ -30,11 +30,11 @@ form {
     gap: 10px;    
         input {
             padding: 5px 0 5px 15px;
-            border: 2px solid #D75D86;
+            border: 2px solid variables.$secondaryFontColour;
         }
         textarea {
             resize: none;
             padding: 15px 0 0 15px;
-            border: 2px solid #D75D86;
+            border: 2px solid variables.$secondaryFontColour;
         }
 }

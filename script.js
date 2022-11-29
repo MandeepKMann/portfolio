@@ -110,6 +110,29 @@ portfolio.clearForm = () => {
         contactForm.reset();
     }
 }
+
+portfolio.scrollToTop = () => {
+    const scrollButton = document.createElement('button');
+    scrollButton.id = 'toTop'
+    scrollButton.innerHTML = '<span class="material-symbols-outlined">expand_less</span>'
+    document.body.appendChild(scrollButton);
+    
+    window.addEventListener('scroll', () => {
+        if (window.scrollY > 100) {
+            scrollButton.classList.add('active');
+        } else {
+            scrollButton.classList.remove('active');
+        }
+    });
+
+    scrollButton.addEventListener('click', () => {
+        window.scrollTo({
+            top: 0,
+            left: 0,
+            behavior: "smooth"
+        });
+    });
+}
   
 
 
@@ -121,6 +144,7 @@ portfolio.init = () => {
     portfolio.scrollToAbout();
     portfolio.toContact();
     portfolio.clearForm();
+    portfolio.scrollToTop();
 
 }
 

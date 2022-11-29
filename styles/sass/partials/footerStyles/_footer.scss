@@ -1,6 +1,6 @@
 @use '../variables';
 
 footer {
-    background-color: #F7EFFE;
+    background-color: variables.$secondBackground;
     padding: 10px;
 }

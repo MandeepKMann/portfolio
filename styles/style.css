@@ -250,7 +250,7 @@ html {
 body {
   font-family: "Roboto";
   font-size: 1rem;
-  color: #000000;
+  color: #757BC8;
 }
 
 h1,
@@ -260,7 +260,6 @@ h4,
 a,
 p {
   font-family: "Roboto";
-  color: black;
   font-weight: normal;
 }
 
@@ -283,7 +282,6 @@ button {
 h1 {
   font-weight: bold;
   font-size: 4rem;
-  color: #757BC8;
 }
 
 h2 {
@@ -299,11 +297,9 @@ h2 {
 h3, h4 {
   font-weight: bold;
   font-size: 1.4rem;
-  color: #757BC8;
 }
 
 .skill i {
-  color: #757BC8;
   font-size: 5rem;
 }
 .skill i:hover, .skill i:focus {
@@ -311,7 +307,7 @@ h3, h4 {
 }
 
 nav a {
-  color: white;
+  color: #FFFFFF;
   font-weight: bold;
 }
 nav a:hover, nav a:focus {
@@ -331,7 +327,7 @@ nav a:hover, nav a:focus {
 .hero p {
   font-size: 1.5rem;
   font-weight: bold;
-  color: white;
+  color: #FAF5FF;
 }
 
 .heroTextContainer p,
@@ -340,7 +336,6 @@ nav a:hover, nav a:focus {
 }
 
 .about p {
-  color: #7776BC;
   font-weight: bold;
 }
 
@@ -351,7 +346,6 @@ nav a:hover, nav a:focus {
 .projectTextOverlay h3,
 .projectTextOverlay p,
 .tools {
-  color: #757BC8;
   text-align: left;
   padding: 0px 15px 0px 15px;
   font-weight: bold;
@@ -363,11 +357,10 @@ nav a:hover, nav a:focus {
 }
 
 .projectLinks a {
-  color: #7776BC;
   background-color: #FAF5FF;
 }
 .projectLinks a:hover, .projectLinks a:focus {
-  background-color: #FFEC51;
+  background-color: #FFF398;
 }
 
 .contactLinks a {
@@ -387,7 +380,6 @@ footer p {
   font-size: 1rem;
   font-weight: bold;
   text-align: center;
-  color: #757BC8;
 }
 
 .wrapper {
@@ -452,8 +444,37 @@ ul {
   gap: 30px;
 }
 
+#toTop {
+  position: fixed;
+  bottom: 16px;
+  right: 25px;
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  border: 2px solid #757BC8;
+  font-size: 25px;
+  color: #D75D86;
+  text-decoration: none;
+  display: none;
+}
+#toTop span {
+  font-size: 3rem;
+}
+
+#toTop.active {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
 header {
-  background-color: white;
+  background-color: #FFFFFF;
 }
 
 .hero {
@@ -500,10 +521,10 @@ header {
   height: -webkit-fit-content;
   height: -moz-fit-content;
   height: fit-content;
-  background-color: white;
+  background-color: #FFFFFF;
 }
 .scrollToAbout:hover, .scrollToAbout:focus {
-  background-color: white;
+  background-color: #FFFFFF;
 }
 .scrollToAbout span {
   font-size: 4rem;
@@ -580,7 +601,7 @@ nav {
 }
 
 .about {
-  background-color: #F7EFFE;
+  background-color: #FAF5FF;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -641,7 +662,7 @@ nav {
 }
 
 .portfolio {
-  background-color: #F7EFFE;
+  background-color: #FAF5FF;
 }
 
 .portfolioUl {
@@ -742,7 +763,7 @@ nav {
   border: 3px solid #D75D86;
 }
 .projectLinks .button a:hover, .projectLinks .button a:focus {
-  background-color: #FFF398;
+  background-color: #FAF5FF;
 }
 
 .contactFlex {
@@ -793,7 +814,7 @@ nav {
 
 .formContainer {
   width: 80%;
-  background-color: #F7EFFE;
+  background-color: #FAF5FF;
   padding: 10px;
   border-right: 5px solid #DDBDFC;
   border-bottom: 5px solid #DDBDFC;
@@ -836,7 +857,7 @@ form textarea {
 }
 
 footer {
-  background-color: #F7EFFE;
+  background-color: #FAF5FF;
   padding: 10px;
 }
 

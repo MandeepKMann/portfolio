@@ -20,29 +20,27 @@ section {
 button {
     width: 200px;
     height: 60px;
-    border: 2px solid #D75D86;
-    color: #D75D86;
-    background-color: #FAF5FF;
+    border: 2px solid variables.$secondaryFontColour;
+    color: variables.$secondaryFontColour;
+    background-color: variables.$secondBackground;
     cursor: pointer;
         &:hover,
         &:focus {
-            background-color: #FFF398;
+            background-color: variables.$linksFontColour;
         }
 }
 
-
-
 .toContact {
-    color: #757BC8;
+    color: variables.$baseFontColour;
 }
 
 .button a{
-    border: 3px solid #D75D86;
+    border: 3px solid variables.$secondaryFontColour;
     padding: 6px 20px 6px 20px;
-    color: #D75D86;
+    color: variables.$secondaryFontColour;
         &:hover,
         &:focus {
-            background-color: #FFF398;
+            background-color: variables.$linksFontColour;
         }
 }
 
@@ -63,4 +61,27 @@ ul {
 .sectionHeading {
     display: flex;
     gap: 30px;
+}
+
+#toTop {
+    position: fixed;
+    bottom: 16px;
+    right: 25px;
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    border: 2px solid variables.$baseFontColour;
+    font-size: 25px;
+    color: variables.$secondaryFontColour;
+    text-decoration: none;
+    display: none;
+        span {
+            font-size: 3rem;
+        }
+}
+
+#toTop.active {
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }

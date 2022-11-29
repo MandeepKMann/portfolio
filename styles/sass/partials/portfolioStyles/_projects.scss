@@ -1,7 +1,7 @@
 @use '../variables';
 
 .portfolio {
-    background-color: #F7EFFE;
+    background-color: variables.$secondBackground;
 }
 
 .portfolioUl {
@@ -14,18 +14,18 @@
 .projectContainer {
     display: flex;
     padding: 30px;
-    background-color: #FAF5FF;
+    background-color: variables.$secondBackground;
     transition: .7s ease-in-out;
-    box-shadow: #CBB2FE 5px 5px, 
-                #ADA7FF 10px 10px, 
-                #8E94F2 15px 15px;
+    box-shadow: variables.$lightShade 5px 5px, 
+                variables.$mediumShade 10px 10px, 
+                variables.$darkShade 15px 15px;
         &:hover,
         &:focus {
             box-shadow: 
-                #CBB2FE 5px 5px,
-                #ADA7FF 10px 10px,
-                #8E94F2 15px 15px, 
-                #D75D86 15px 20px 20px;
+                variables.$lightShade 5px 5px,
+                variables.$mediumShade 10px 10px,
+                variables.$darkShade 15px 15px, 
+                variables.$secondaryFontColour 15px 20px 20px;
         }
 }
 
@@ -63,11 +63,11 @@
     justify-content: space-between;
     align-items: center;
     gap: 20px;
-        .button a{
-            border: 3px solid #D75D86;
+        .button a {
+            border: 3px solid variables.$secondaryFontColour;
                 &:hover,
                 &:focus {
-                    background-color: #FFF398;
+                    background-color: variables.$secondBackground;
                 }
         }
 }

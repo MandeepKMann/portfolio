@@ -2,7 +2,7 @@
 
 // Header Styles
 header {
-    background-color: white;
+    background-color: variables.$mainBackground;
 }
 
 .hero {
@@ -19,14 +19,14 @@ header {
 }
 
 .toContact {
-    border-right: 5px solid #757BC8;
-    border-bottom: 5px solid #757BC8;
-    border-top: 1px solid #757BC8;
-    border-left: 1px solid #757BC8;
-    box-shadow: #8E94F2 5px 5px, #ADA7FF 10px 10px, #CBB2FE 15px 15px;
+    border-right: 5px solid variables.$baseFontColour;
+    border-bottom: 5px solid variables.$baseFontColour;
+    border-top: 1px solid variables.$baseFontColour;
+    border-left: 1px solid variables.$baseFontColour;
+    box-shadow: variables.$darkShade 5px 5px, variables.$mediumShade 10px 10px, variables.$lightShade 15px 15px;
         &:hover,
         &:focus {
-            background-color: #FFF398;
+            background-color: variables.$linksFontColour;
         }
 }
 
@@ -36,10 +36,10 @@ header {
     margin-bottom: 1%;
     width: fit-content;
     height: fit-content;
-    background-color: white;
+    background-color: variables.$mainBackground;
         &:hover,
         &:focus {
-            background-color: white;
+            background-color: variables.$mainBackground;
         }
         span {
             font-size: 4rem;
@@ -47,8 +47,10 @@ header {
         }
 }
 
+// Typewriter animation on header text
+// https://www.youtube.com/watch?v=R846J8LJ6os
 #cursor {
-    color: #757BC8;
+    color: variables.$baseFontColour;
     animation: blink .6s linear infinite alternate;
 }
 
