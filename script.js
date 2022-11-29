@@ -19,20 +19,36 @@ portfolio.hamburgerMenu = () => {
     const closeIcon = document.querySelector('.closeIcon');
     const hamburgerIcon = document.querySelector('.hamburgerIcon');
     const menu = document.querySelector('.hamburgerMenu');
-    
-    const toggleMenu = () => {
-        navUl.classList.toggle('active');
-        hamburgerIcon.classList.toggle('active');
-        closeIcon.classList.toggle('active');
-    };
-
-    menu.addEventListener('click', toggleMenu);
-
     const navLinks = document.querySelectorAll('.navUl a')
+    console.log(navLinks)
+    
+    if (window.innerWidth <= 800) {
+        console.log("it works")
+        console.log(window.innerWidth)
+        navLinks.forEach(link => {
+            link.classList.add('hamburgerLinks')
+        })
+        const hambugerLinks = document.querySelectorAll('.hamburgerLinks')
+        const toggleMenu = () => {
+            navUl.classList.toggle('active');
+            hamburgerIcon.classList.toggle('active');
+            closeIcon.classList.toggle('active');
+        };
+        menu.addEventListener('click', toggleMenu);
+        
+        
+        hambugerLinks.forEach(link => {
+            link.addEventListener('click', toggleMenu);
+        });
+    } else if (window.innerWidth > 800){
+        console.log(window.innerWidth)
+        console.log("hi")
+        navLinks.forEach(link => {
+            link.classList.remove('hamburgerLinks')
+            
+        })
+    }
 
-    navLinks.forEach(link => {
-        link.addEventListener('click', toggleMenu);
-    });
 };
 
 
