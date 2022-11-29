@@ -18,6 +18,11 @@ section {
 }
 
 button {
+    width: 200px;
+    height: 60px;
+    border: 2px solid #D75D86;
+    color: #D75D86;
+    background-color: white;
     cursor: pointer;
         &:hover,
         &:focus {
@@ -25,10 +30,16 @@ button {
         }
 }
 
+
+
+.toContact {
+    color: #757BC8;
+}
+
 .button a{
-    border: 3px solid #9254BB;
+    border: 3px solid #D75D86;
     padding: 6px 20px 6px 20px;
-    color: #9254BB;
+    color: #D75D86;
         &:hover,
         &:focus {
             background-color: #FFF398;
@@ -47,14 +58,6 @@ img {
 ul {
     list-style: none;
     padding-left: 0px;
-}
-
-button {
-    width: 200px;
-    height: 60px;
-    border: 2px solid #757BC8;
-    color: #757BC8;
-    background-color: white;
 }
 
 .sectionHeading {

@@ -15,16 +15,6 @@ header {
             align-items: center;
             justify-content: flex-end;
             gap: 200px;
-                .heroTextContainer { 
-                        p {
-                            color: #757BC8;
-                            // text-shadow: -1px 1px 1px #AC07FF,
-                            //               1px 1px 1px #AC07FF,
-                            //               1px -1px 1px #AC07FF,
-                            //              -1px -1px 1px #AC07FF;
-                        //https: //www.geeksforgeeks.org/css-font-border/  
-                        }
-                }
         }
 }
 
@@ -46,6 +36,10 @@ header {
     margin-bottom: 1%;
     width: fit-content;
     height: fit-content;
+        &:hover,
+        &:focus {
+            background-color: white;
+        }
         span {
             font-size: 4rem;
             font-weight: bold;

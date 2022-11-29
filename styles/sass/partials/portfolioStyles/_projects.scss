@@ -10,11 +10,19 @@
     gap: 50px;
 }
 
+
 .projectContainer {
     display: flex;
     padding: 30px;
     background-color: #FAF5FF;
     box-shadow: #CBB2FE 5px 5px, #ADA7FF 10px 10px, #8E94F2 15px 15px;
+    transition: .7s ease-in-out;
+        &:hover,
+        &:focus {
+            box-shadow: #CBB2FE 5px 5px,
+                #ADA7FF 10px 10px,
+                #8E94F2 15px 15px, 15px 20px 20px #D75D86;
+        }
 }
 
 .projectImgContainer {
@@ -22,15 +30,18 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    width: 30%;
+    width: 40%;
 }
 
 .projectTextOverlay {
-    width: 70%;
+    width: 60%;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
+        h3 {
+            text-align: center;
+        }
         .tools {
             display: flex;
             flex-wrap: wrap;
@@ -48,4 +59,11 @@
     justify-content: space-between;
     align-items: center;
     gap: 20px;
+        .button a{
+            border: 3px solid #D75D86;
+                &:hover,
+                &:focus {
+                    background-color: #FFF398;
+                }
+        }
 }
