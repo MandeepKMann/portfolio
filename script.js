@@ -20,11 +20,9 @@ portfolio.hamburgerMenu = () => {
     const hamburgerIcon = document.querySelector('.hamburgerIcon');
     const menu = document.querySelector('.hamburgerMenu');
     const navLinks = document.querySelectorAll('.navUl a')
-    console.log(navLinks)
+
     
     if (window.innerWidth <= 800) {
-        console.log("it works")
-        console.log(window.innerWidth)
         navLinks.forEach(link => {
             link.classList.add('hamburgerLinks')
         })
@@ -41,8 +39,6 @@ portfolio.hamburgerMenu = () => {
             link.addEventListener('click', toggleMenu);
         });
     } else if (window.innerWidth > 800){
-        console.log(window.innerWidth)
-        console.log("hi")
         navLinks.forEach(link => {
             link.classList.remove('hamburgerLinks')
             
