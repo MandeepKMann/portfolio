@@ -2,7 +2,8 @@
 
 // Nav Styles
 nav {
-    background-color: variables.$baseFontColour;
+    background-color: rgba(variables.$black, 0.8);
+
     position: fixed;
     top: 0;
     left: 0;

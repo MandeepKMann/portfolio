@@ -3,6 +3,9 @@
 // Roboto Regular, Roboto Bold
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
 
+// Inter Regular, Inter Bold
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
+
 // Typography Styles
 html {
     // 1rem = 20px
@@ -39,7 +42,6 @@ button {
 }
 
 h1 {
-    font-weight: bold;
     font-size: 4rem;
 }
 
@@ -66,9 +68,9 @@ h3, h4 {
         }
 }
 
+
 nav a {
-    color: variables.$mainBackground;
-    font-weight: bold;
+    color: variables.$white;
         &:hover,
         &:focus {
             color: variables.$linksFontColour;
@@ -76,7 +78,6 @@ nav a {
 }
 
 .logo a {
-    font-weight: bold;
     font-size: 1.8rem;
 }
 

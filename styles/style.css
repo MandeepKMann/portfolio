@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap");
 html {
   line-height: 1.15;
   -ms-text-size-adjust: 100%;
@@ -248,9 +249,9 @@ html {
 }
 
 body {
-  font-family: "Roboto";
+  font-family: "Inter";
   font-size: 1rem;
-  color: #757BC8;
+  color: #FEFEFE;
 }
 
 h1,
@@ -259,7 +260,7 @@ h3,
 h4,
 a,
 p {
-  font-family: "Roboto";
+  font-family: "Inter";
   font-weight: normal;
 }
 
@@ -280,7 +281,6 @@ button {
 }
 
 h1 {
-  font-weight: bold;
   font-size: 4rem;
 }
 
@@ -307,15 +307,13 @@ h3, h4 {
 }
 
 nav a {
-  color: #FFFFFF;
-  font-weight: bold;
+  color: #FEFEFE;
 }
 nav a:hover, nav a:focus {
   color: #FFF398;
 }
 
 .logo a {
-  font-weight: bold;
   font-size: 1.8rem;
 }
 
@@ -364,7 +362,7 @@ nav a:hover, nav a:focus {
 }
 
 .contactLinks a {
-  color: #757BC8;
+  color: #FEFEFE;
   font-size: 3rem;
   padding: 10px;
 }
@@ -411,7 +409,7 @@ button:hover, button:focus {
 }
 
 .toContact {
-  color: #757BC8;
+  color: #FEFEFE;
 }
 
 .button a {
@@ -451,7 +449,7 @@ ul {
   width: 70px;
   height: 70px;
   border-radius: 50%;
-  border: 2px solid #757BC8;
+  border: 2px solid #FEFEFE;
   font-size: 25px;
   color: #ff69b4;
   text-decoration: none;
@@ -474,7 +472,7 @@ ul {
 }
 
 header {
-  background-color: #FFFFFF;
+  background-color: #0B080B;
 }
 
 .hero {
@@ -500,10 +498,10 @@ header {
 }
 
 .toContact {
-  border-right: 5px solid #757BC8;
-  border-bottom: 5px solid #757BC8;
-  border-top: 1px solid #757BC8;
-  border-left: 1px solid #757BC8;
+  border-right: 5px solid #FEFEFE;
+  border-bottom: 5px solid #FEFEFE;
+  border-top: 1px solid #FEFEFE;
+  border-left: 1px solid #FEFEFE;
   -webkit-box-shadow: #8E94F2 5px 5px, #ADA7FF 10px 10px, #CBB2FE 15px 15px;
           box-shadow: #8E94F2 5px 5px, #ADA7FF 10px 10px, #CBB2FE 15px 15px;
 }
@@ -532,7 +530,7 @@ header {
 }
 
 #cursor {
-  color: #757BC8;
+  color: #FEFEFE;
   -webkit-animation: blink 0.6s linear infinite alternate;
           animation: blink 0.6s linear infinite alternate;
 }
@@ -567,7 +565,7 @@ header {
   }
 }
 nav {
-  background-color: #757BC8;
+  background-color: rgba(11, 8, 11, 0.8);
   position: fixed;
   top: 0;
   left: 0;
@@ -903,7 +901,7 @@ footer {
     position: absolute;
     top: 61px;
     left: 0px;
-    background-color: #757BC8;
+    background-color: #FEFEFE;
   }
   .navFlex .navUl.active {
     display: -webkit-box;
@@ -931,7 +929,7 @@ footer {
             justify-content: flex-end;
     -ms-flex-item-align: center;
         align-self: center;
-    background-color: #757BC8;
+    background-color: #FEFEFE;
     border: none;
   }
   .navFlex .hamburgerMenu .hamburgerIcon {
