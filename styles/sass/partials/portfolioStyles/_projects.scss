@@ -18,7 +18,8 @@
     padding: 30px;
     border-radius: 15px;
     background-color: variables.$lighterBlack;
-    transition: .7s ease-in-out;
+    transition: box-shadow .7s ease-in-out;
+    box-shadow: 0 0 0 variables.$purpleOne;
         &:hover,
         &:focus {
             box-shadow: variables.$purpleOne 0px 0px 20px;
@@ -70,9 +71,16 @@
 
         .button {
                 background-color: variables.$white;
+                color: variables.$black;
                 padding: 10px;
                 border-radius: 30px;
                 width: 200px;
                 text-align: center;
+
+                &:hover,
+                &:focus {
+                    color: variables.$white;
+                    background-color: variables.$purpleOne;
+                }
         }
 }

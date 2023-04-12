@@ -402,16 +402,10 @@ section {
 }
 
 button {
-  width: 200px;
-  height: 60px;
-  background-color: #7367cd;
-  color: #0B080B;
+  background-color: #0B080B;
+  color: #FEFEFE;
   border: none;
-  border-radius: 30px;
   cursor: pointer;
-}
-button:hover, button:focus {
-  background-color: #FEFEFE;
 }
 
 a {
@@ -586,6 +580,50 @@ header {
             transform: translateY(-15px);
   }
 }
+.toContact {
+  cursor: pointer;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.toContact:hover .arrow {
+  width: 20%;
+}
+.toContact .arrow {
+  width: 10%;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+  margin: 0 2rem 0 1rem;
+  border: 1px solid #fff;
+  position: relative;
+  background: #fff;
+}
+.toContact .arrow .head,
+.toContact .arrow .head:after {
+  border: 1.5px solid #fff;
+  border-radius: 2px;
+  width: 8px;
+  position: absolute;
+  right: -5px;
+  top: 2px;
+  -webkit-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+}
+.toContact .arrow .head:after {
+  content: "";
+  border-color: #ffffff;
+  right: -5px;
+  top: -5px;
+  -webkit-transform: rotate(90deg);
+          transform: rotate(90deg);
+}
+
 nav {
   background-color: rgba(11, 8, 11, 0.8);
   position: fixed;
@@ -626,7 +664,7 @@ nav {
 }
 
 .about {
-  background-color: #7367cd;
+  background-color: #1E1E20;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -656,10 +694,6 @@ nav {
       -ms-flex-direction: column;
           flex-direction: column;
   width: 50%;
-}
-.aboutFlex .aboutTextContainer h4,
-.aboutFlex .aboutTextContainer p {
-  color: #0B080B;
 }
 .aboutFlex .aboutImgContainer {
   width: 50%;
@@ -730,12 +764,16 @@ nav {
   padding: 30px;
   border-radius: 15px;
   background-color: #1E1E20;
-  -webkit-transition: 0.7s ease-in-out;
-  transition: 0.7s ease-in-out;
+  -webkit-transition: -webkit-box-shadow 0.7s ease-in-out;
+  transition: -webkit-box-shadow 0.7s ease-in-out;
+  transition: box-shadow 0.7s ease-in-out;
+  transition: box-shadow 0.7s ease-in-out, -webkit-box-shadow 0.7s ease-in-out;
+  -webkit-box-shadow: 0 0 0 #A393FE;
+          box-shadow: 0 0 0 #A393FE;
 }
 .projectContainer:hover, .projectContainer:focus {
-  -webkit-box-shadow: #7367cd 0px 0px 20px;
-          box-shadow: #7367cd 0px 0px 20px;
+  -webkit-box-shadow: #A393FE 0px 0px 20px;
+          box-shadow: #A393FE 0px 0px 20px;
 }
 
 .projectImgContainer {
@@ -815,10 +853,15 @@ nav {
 }
 .projectLinks .button {
   background-color: #FEFEFE;
+  color: #0B080B;
   padding: 10px;
   border-radius: 30px;
   width: 200px;
   text-align: center;
+}
+.projectLinks .button:hover, .projectLinks .button:focus {
+  color: #FEFEFE;
+  background-color: #A393FE;
 }
 
 .contactFlex {

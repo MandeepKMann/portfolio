@@ -47,6 +47,8 @@ header {
         }
 }
 
+
+
 // Typewriter animation on header text
 // https://www.youtube.com/watch?v=R846J8LJ6os
 #cursor {
@@ -83,3 +85,44 @@ header {
         transform: translateY(-15px);
     }
 }
+
+
+// https: //codepen.io/shuta/pen/dXbyWz
+.toContact {
+    cursor: pointer;
+    transition: all 0.3s ease;
+    align-items: center;
+    width: 50%;
+    display: flex;
+        &:hover .arrow {
+            width: 20%;
+        }
+        .arrow {
+            width: 10%;
+            transition: all 0.3s ease;
+            margin: 0 2rem 0 1rem;
+            border: 1px solid #fff;
+            position: relative;
+            background: #fff;
+        }
+        .arrow .head,
+        .arrow .head:after {
+            border: 1.5px solid #fff;
+            border-radius: 2px;
+            width: 8px;
+            position: absolute;
+            right: -5px;
+            top: 2px;
+            transform: rotate(-45deg);
+        }
+        
+        .arrow .head:after {
+            content: "";
+            border-color: #ffffff;
+            right: -5px;
+            top: -5px;
+            transform: rotate(90deg);
+        }
+}
+
+

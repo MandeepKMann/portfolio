@@ -22,17 +22,10 @@ section {
 }
 
 button {
-    width: 200px;
-    height: 60px;
-    background-color: variables.$purpleOne;
-    color: variables.$black;
+    background-color: variables.$black;
+    color: variables.$white;
     border: none;
-    border-radius: 30px;
     cursor: pointer;
-        &:hover,
-        &:focus {
-            background-color: variables.$white;
-        }
 }
 
 a {
