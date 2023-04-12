@@ -1,5 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Mulish:wght@400;700&display=swap");
 html {
   line-height: 1.15;
   -ms-text-size-adjust: 100%;
@@ -249,7 +250,7 @@ html {
 }
 
 body {
-  font-family: "Inter";
+  font-family: "Mulish";
   font-size: 1rem;
   color: #FEFEFE;
 }
@@ -260,7 +261,7 @@ h3,
 h4,
 a,
 p {
-  font-family: "Inter";
+  font-family: "Mulish";
   font-weight: normal;
 }
 
@@ -325,12 +326,12 @@ nav a:hover, nav a:focus {
 .hero p {
   font-size: 1.5rem;
   font-weight: bold;
-  color: #FAF5FF;
+  color: #F7B1C1;
 }
 
 .heroTextContainer p,
 .heroTextContainer span {
-  color: #ff69b4;
+  color: #F7B1C1;
 }
 
 .about p {
@@ -399,17 +400,14 @@ section {
 button {
   width: 200px;
   height: 60px;
-  border: 2px solid #ff69b4;
-  color: #ff69b4;
-  background-color: #FAF5FF;
+  background-color: #A393FE;
+  color: #0B080B;
+  border: none;
+  border-radius: 30px;
   cursor: pointer;
 }
 button:hover, button:focus {
-  background-color: #FFF398;
-}
-
-.toContact {
-  color: #FEFEFE;
+  background-color: #FEFEFE;
 }
 
 .button a {
@@ -496,17 +494,13 @@ header {
           justify-content: flex-end;
   gap: 200px;
 }
-
-.toContact {
-  border-right: 5px solid #FEFEFE;
-  border-bottom: 5px solid #FEFEFE;
-  border-top: 1px solid #FEFEFE;
-  border-left: 1px solid #FEFEFE;
-  -webkit-box-shadow: #8E94F2 5px 5px, #ADA7FF 10px 10px, #CBB2FE 15px 15px;
-          box-shadow: #8E94F2 5px 5px, #ADA7FF 10px 10px, #CBB2FE 15px 15px;
+.hero .heroFlex .heroTextContainer {
+  -ms-flex-item-align: start;
+      align-self: flex-start;
+  text-align: left;
 }
-.toContact:hover, .toContact:focus {
-  background-color: #FFF398;
+.hero .heroFlex .heroTextContainer h1 {
+  margin: 0px;
 }
 
 .scrollToAbout {
@@ -519,10 +513,8 @@ header {
   height: -webkit-fit-content;
   height: -moz-fit-content;
   height: fit-content;
-  background-color: #FFFFFF;
-}
-.scrollToAbout:hover, .scrollToAbout:focus {
-  background-color: #FFFFFF;
+  background-color: #0B080B;
+  color: #FEFEFE;
 }
 .scrollToAbout span {
   font-size: 4rem;
@@ -573,6 +565,7 @@ nav {
   width: 100%;
   -webkit-transition: all 300ms ease-in-out;
   transition: all 300ms ease-in-out;
+  border-bottom: 1px solid rgba(254, 254, 254, 0.1);
 }
 
 .navFlex {

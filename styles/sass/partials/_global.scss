@@ -20,18 +20,15 @@ section {
 button {
     width: 200px;
     height: 60px;
-    border: 2px solid variables.$secondaryFontColour;
-    color: variables.$secondaryFontColour;
-    background-color: variables.$secondBackground;
+    background-color: variables.$purpleOne;
+    color: variables.$black;
+    border: none;
+    border-radius: 30px;
     cursor: pointer;
         &:hover,
         &:focus {
-            background-color: variables.$linksFontColour;
+            background-color: variables.$white;
         }
-}
-
-.toContact {
-    color: variables.$baseFontColour;
 }
 
 .button a{

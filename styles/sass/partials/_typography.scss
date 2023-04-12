@@ -6,6 +6,9 @@
 // Inter Regular, Inter Bold
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
 
+// Mulish Regular, Mulish Bold
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Mulish:wght@400;700&display=swap');
+
 // Typography Styles
 html {
     // 1rem = 20px
@@ -91,12 +94,12 @@ nav a {
 .hero p {
     font-size: 1.5rem;
     font-weight: bold;
-    color: variables.$secondBackground;
+    color: variables.$pink;
 }
 
 .heroTextContainer p,
 .heroTextContainer span {
-    color: variables.$secondaryFontColour;
+    color: variables.$pink;
 }
 
 .about p {

@@ -15,18 +15,13 @@ header {
             align-items: center;
             justify-content: flex-end;
             gap: 200px;
-        }
-}
-
-.toContact {
-    border-right: 5px solid variables.$baseFontColour;
-    border-bottom: 5px solid variables.$baseFontColour;
-    border-top: 1px solid variables.$baseFontColour;
-    border-left: 1px solid variables.$baseFontColour;
-    box-shadow: variables.$darkShade 5px 5px, variables.$mediumShade 10px 10px, variables.$lightShade 15px 15px;
-        &:hover,
-        &:focus {
-            background-color: variables.$linksFontColour;
+                .heroTextContainer {
+                    align-self: flex-start;
+                    text-align: left;
+                        h1 {
+                            margin: 0px;
+                        }
+                }
         }
 }
 
@@ -36,11 +31,8 @@ header {
     margin-bottom: 1%;
     width: fit-content;
     height: fit-content;
-    background-color: variables.$mainBackground;
-        &:hover,
-        &:focus {
-            background-color: variables.$mainBackground;
-        }
+    background-color: variables.$black;
+    color: variables.$white;
         span {
             font-size: 4rem;
             font-weight: bold;
