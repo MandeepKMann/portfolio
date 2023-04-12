@@ -1,5 +1,9 @@
 @use "./variables";
 
+body {
+    background-color: variables.$black;
+}
+
 // Wrapper
 .wrapper {
     width: 80%;
@@ -28,16 +32,6 @@ button {
         &:hover,
         &:focus {
             background-color: variables.$white;
-        }
-}
-
-.button a{
-    border: 3px solid variables.$secondaryFontColour;
-    padding: 6px 20px 6px 20px;
-    color: variables.$secondaryFontColour;
-        &:hover,
-        &:focus {
-            background-color: variables.$linksFontColour;
         }
 }
 

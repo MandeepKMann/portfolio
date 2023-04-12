@@ -1,11 +1,13 @@
 @use '../variables';
 
 .about {
-    background-color: variables.$secondBackground;
+    background-color: variables.$purpleOne;
     display: flex;
     align-items: center;
     // https: //stackoverflow.com/questions/24665602/scrollintoview-scrolls-just-too-far
     scroll-margin-top: 80px;
+    border-radius: 15px;
+    margin: 25px 50px;
 }
 
 .aboutFlex {
@@ -15,10 +17,14 @@
         .aboutTextContainer {
             display: flex;
             flex-direction: column;
-            width: 60%;
+            width: 50%;
+                h4,
+                p {
+                    color: variables.$black;
+                }
         }
         .aboutImgContainer {
-            width: 40%;
+            width: 50%;
             display: flex;
             justify-content: center;
             align-items: center;

@@ -1,7 +1,9 @@
 @use '../variables';
 
 .portfolio {
-    background-color: variables.$secondBackground;
+    background-color: variables.$lighterBlack;
+    border-radius: 15px;
+    margin: 25px 50px;
 }
 
 .portfolioUl {
@@ -14,18 +16,12 @@
 .projectContainer {
     display: flex;
     padding: 30px;
-    background-color: variables.$secondBackground;
+    border-radius: 15px;
+    background-color: variables.$lighterBlack;
     transition: .7s ease-in-out;
-    box-shadow: variables.$lightShade 5px 5px, 
-                variables.$mediumShade 10px 10px, 
-                variables.$darkShade 15px 15px;
         &:hover,
         &:focus {
-            box-shadow: 
-                variables.$lightShade 5px 5px,
-                variables.$mediumShade 10px 10px,
-                variables.$darkShade 15px 15px, 
-                variables.$secondaryFontColour 15px 20px 20px;
+            box-shadow: variables.$purpleOne 0px 0px 20px;
         }
 }
 
@@ -34,16 +30,24 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    width: 40%;
+    width: 50%;
+    border-radius: 15px;
+        img {
+            border-radius: 15px;
+        }
 }
 
 .projectTextOverlay {
-    width: 60%;
+    width: 50%;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
         h3 {
+            text-align: center;
+        }
+        p {
+            width: 70%;
             text-align: center;
         }
         .tools {
@@ -63,11 +67,12 @@
     justify-content: space-between;
     align-items: center;
     gap: 20px;
-        .button a {
-            border: 3px solid variables.$secondaryFontColour;
-                &:hover,
-                &:focus {
-                    background-color: variables.$linksFontColour;
-                }
+
+        .button {
+                background-color: variables.$white;
+                padding: 10px;
+                border-radius: 30px;
+                width: 200px;
+                text-align: center;
         }
 }

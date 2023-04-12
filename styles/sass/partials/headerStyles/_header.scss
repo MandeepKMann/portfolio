@@ -3,6 +3,8 @@
 // Header Styles
 header {
     background-color: #0B080B;
+    border-radius: 15px;
+    margin: 25px 50px;
 }
 
 .hero {
@@ -33,6 +35,12 @@ header {
     height: fit-content;
     background-color: variables.$black;
     color: variables.$white;
+        &:hover,
+        &:focus {
+            background-color: variables.$black;
+            animation: bounce 1.5s ease infinite;
+        }
+
         span {
             font-size: 4rem;
             font-weight: bold;
@@ -61,3 +69,17 @@ header {
     }
 }
 
+// https: //codepen.io/nelledejones/pen/gOOPWrK
+@keyframes bounce {
+    0%, 20%, 50%, 80%, 100% {
+        transform: translateY(0);
+    }
+
+    40% {
+        transform: translateY(-30px);
+    }
+
+    60% {
+        transform: translateY(-15px);
+    }
+}
