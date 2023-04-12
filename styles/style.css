@@ -771,7 +771,7 @@ nav {
   -webkit-box-shadow: 0 0 0 #A393FE;
           box-shadow: 0 0 0 #A393FE;
 }
-.projectContainer:hover, .projectContainer:focus {
+.projectContainer:hover, .projectContainer:focus-within {
   -webkit-box-shadow: #A393FE 0px 0px 20px;
           box-shadow: #A393FE 0px 0px 20px;
 }

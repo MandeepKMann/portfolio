@@ -21,7 +21,7 @@
     transition: box-shadow .7s ease-in-out;
     box-shadow: 0 0 0 variables.$purpleOne;
         &:hover,
-        &:focus {
+        &:focus-within {   
             box-shadow: variables.$purpleOne 0px 0px 20px;
         }
 }
