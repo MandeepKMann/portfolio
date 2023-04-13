@@ -24,8 +24,10 @@
             display: flex;
             justify-content: center;
             align-items: center;
-                img {
-                    box-shadow: variables.$lightShade 5px 5px, variables.$mediumShade 10px 10px, variables.$darkShade 15px 15px;
+            border-radius: 15px;
+            img {
+                border-radius: 15px;
+                border: 2px solid variables.$purpleOne;
                 }
         }
 }

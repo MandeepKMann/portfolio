@@ -1,11 +1,5 @@
 @use "./variables";
 
-// Roboto Regular, Roboto Bold
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
-
-// Inter Regular, Inter Bold
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
-
 // Mulish Regular, Mulish Bold
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Mulish:wght@400;700&display=swap');
 
@@ -40,16 +34,11 @@ i {
     font-size: 2rem;
 }
 
-button {
-    font-weight: bold;
-}
-
 h1 {
     font-size: 4rem;
 }
 
 h2 {
-    font-weight: bold;
     color: variables.$white;
     font-size: 2.5rem;
 }
@@ -67,7 +56,7 @@ h3, h4 {
     font-size: 5rem;
         &:hover,
         &:focus {
-            color: variables.$secondaryFontColour;
+            color: variables.$purpleOne;
         }
 }
 
@@ -76,7 +65,7 @@ nav a {
     color: variables.$white;
         &:hover,
         &:focus {
-            color: variables.$linksFontColour;
+            color: variables.$purpleOne;
         }
 }
 
@@ -94,12 +83,7 @@ nav a {
 .hero p {
     font-size: 1.5rem;
     font-weight: bold;
-    color: variables.$pink;
-}
-
-.heroTextContainer p,
-.heroTextContainer span {
-    color: variables.$pink;
+    color: variables.$purpleOne;
 }
 
 .about p {

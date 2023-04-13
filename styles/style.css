@@ -1,5 +1,3 @@
-@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Mulish:wght@400;700&display=swap");
 html {
   line-height: 1.15;
@@ -277,16 +275,11 @@ i {
   font-size: 2rem;
 }
 
-button {
-  font-weight: bold;
-}
-
 h1 {
   font-size: 4rem;
 }
 
 h2 {
-  font-weight: bold;
   color: #FEFEFE;
   font-size: 2.5rem;
 }
@@ -304,14 +297,14 @@ h3, h4 {
   font-size: 5rem;
 }
 .skill i:hover, .skill i:focus {
-  color: #ff69b4;
+  color: #A393FE;
 }
 
 nav a {
   color: #FEFEFE;
 }
 nav a:hover, nav a:focus {
-  color: #FFF398;
+  color: #A393FE;
 }
 
 .logo a {
@@ -326,12 +319,7 @@ nav a:hover, nav a:focus {
 .hero p {
   font-size: 1.5rem;
   font-weight: bold;
-  color: #F7B1C1;
-}
-
-.heroTextContainer p,
-.heroTextContainer span {
-  color: #F7B1C1;
+  color: #A393FE;
 }
 
 .about p {
@@ -706,10 +694,11 @@ nav {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  border-radius: 15px;
 }
 .aboutFlex .aboutImgContainer img {
-  -webkit-box-shadow: #CBB2FE 5px 5px, #ADA7FF 10px 10px, #8E94F2 15px 15px;
-          box-shadow: #CBB2FE 5px 5px, #ADA7FF 10px 10px, #8E94F2 15px 15px;
+  border-radius: 15px;
+  border: 2px solid #A393FE;
 }
 
 .skills {
@@ -856,7 +845,7 @@ nav {
   color: #0B080B;
   padding: 10px;
   border-radius: 30px;
-  width: 200px;
+  width: 100px;
   text-align: center;
 }
 .projectLinks .button:hover, .projectLinks .button:focus {
