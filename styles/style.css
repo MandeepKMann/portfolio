@@ -420,14 +420,15 @@ ul {
 
 #toTop {
   position: fixed;
-  bottom: 16px;
+  bottom: 10px;
   right: 25px;
   width: 70px;
   height: 70px;
   border-radius: 50%;
-  border: 2px solid #FEFEFE;
+  border: 5px solid #0B080B;
+  background-color: #1E1E20;
   font-size: 25px;
-  color: #ff69b4;
+  color: #A393FE;
   text-decoration: none;
   display: none;
 }
@@ -446,7 +447,40 @@ ul {
       -ms-flex-pack: center;
           justify-content: center;
 }
+#toTop.active:hover, #toTop.active:focus {
+  -webkit-animation: bounce 1.5s ease infinite;
+          animation: bounce 1.5s ease infinite;
+}
 
+@-webkit-keyframes bounce {
+  0%, 20%, 50%, 80%, 100% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+  40% {
+    -webkit-transform: translateY(-30px);
+            transform: translateY(-30px);
+  }
+  60% {
+    -webkit-transform: translateY(-15px);
+            transform: translateY(-15px);
+  }
+}
+
+@keyframes bounce {
+  0%, 20%, 50%, 80%, 100% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+  40% {
+    -webkit-transform: translateY(-30px);
+            transform: translateY(-30px);
+  }
+  60% {
+    -webkit-transform: translateY(-15px);
+            transform: translateY(-15px);
+  }
+}
 header {
   background-color: #0B080B;
   border-radius: 15px;
@@ -539,20 +573,6 @@ header {
   }
   100% {
     opacity: 0;
-  }
-}
-@-webkit-keyframes bounce {
-  0%, 20%, 50%, 80%, 100% {
-    -webkit-transform: translateY(0);
-            transform: translateY(0);
-  }
-  40% {
-    -webkit-transform: translateY(-30px);
-            transform: translateY(-30px);
-  }
-  60% {
-    -webkit-transform: translateY(-15px);
-            transform: translateY(-15px);
   }
 }
 @keyframes bounce {
@@ -924,7 +944,7 @@ nav {
   -webkit-transition: 0.7s ease-in-out;
   transition: 0.7s ease-in-out;
 }
-.formContainer:hover, .formContainer:focus {
+.formContainer:hover, .formContainer:focus-within {
   -webkit-box-shadow: #A393FE 0px 0px 20px;
           box-shadow: #A393FE 0px 0px 20px;
 }
@@ -974,6 +994,7 @@ form button:hover, form button:focus {
 footer {
   background-color: #0B080B;
   padding: 10px;
+  border-top: 1px solid rgba(254, 254, 254, 0.1);
 }
 
 @media (max-width: 630px) {
