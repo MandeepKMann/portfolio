@@ -258,7 +258,8 @@ h2,
 h3,
 h4,
 a,
-p {
+p,
+button {
   font-family: "Mulish";
   font-weight: normal;
 }
@@ -339,7 +340,7 @@ nav a:hover, nav a:focus {
 }
 
 .projectTextOverlay a {
-  color: #ff69b4;
+  color: #A393FE;
   font-weight: bold;
 }
 
@@ -356,7 +357,7 @@ nav a:hover, nav a:focus {
   padding: 10px;
 }
 .contactLinks a:hover, .contactLinks a:focus {
-  color: #ff69b4;
+  color: #A393FE;
 }
 
 .formContainer h3 {
@@ -943,18 +944,31 @@ form {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  gap: 10px;
+  gap: 15px;
 }
 form input {
   padding: 5px 0 5px 15px;
-  border: 2px solid #ff69b4;
+  border: 2px solid #A393FE;
   border-radius: 15px;
 }
 form textarea {
   resize: none;
   padding: 15px 0 0 15px;
-  border: 2px solid #ff69b4;
+  border: 2px solid #A393FE;
   border-radius: 15px;
+}
+form button {
+  width: 200px;
+  height: 60px;
+  border-radius: 30px;
+  color: #0B080B;
+  background-color: #FEFEFE;
+  font-weight: bold;
+  border: 2px solid #A393FE;
+}
+form button:hover, form button:focus {
+  background-color: #A393FE;
+  color: #FEFEFE;
 }
 
 footer {

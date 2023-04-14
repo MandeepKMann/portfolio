@@ -22,16 +22,31 @@ form {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    gap: 10px;    
+    gap: 15px;    
         input {
             padding: 5px 0 5px 15px;
-            border: 2px solid variables.$secondaryFontColour;
+            border: 2px solid variables.$purpleOne;
             border-radius: 15px;
         }
         textarea {
             resize: none;
             padding: 15px 0 0 15px;
-            border: 2px solid variables.$secondaryFontColour;
+            border: 2px solid variables.$purpleOne;
             border-radius: 15px;
+        }
+
+        button {
+            width: 200px;
+            height: 60px;
+            border-radius: 30px;
+            color: variables.$black;
+            background-color: variables.$white;
+            font-weight: bold;
+            border: 2px solid variables.$purpleOne;
+                &:hover,
+                &:focus {
+                    background-color: variables.$purpleOne;
+                    color: variables.$white;
+                }
         }
 }
