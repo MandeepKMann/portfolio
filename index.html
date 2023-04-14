@@ -45,8 +45,8 @@
                     <p>I'm <span id="typewriter"></span><span id="cursor">|</span>
                     </p>
                     <button class="toContact">
-                        <div class="toContactText">Get In Touch</div>
-                        <div class="arrow"><div class="head"></div></div>
+                        <span class="toContactText">Get In Touch</span>
+                        <span class="arrow"><span class="head"></span></span>
                     </button>
                 </div>
                 <button class="scrollToAbout">
@@ -63,14 +63,14 @@
             <div class="aboutFlex wrapper">
                 <div class="aboutTextContainer">
                     <h2>About</h2>
-                    <h4>I'm Mandeep Mann, a Web Developer</h4>
+                    <h3>I'm Mandeep Mann, a Web Developer</h3>
                     <p>I graduated from Juno College of Technology and from Toronto Metropolitan University with a Masters in Early Childhood Studies.</p>
                     <p>I am someone who enjoys encountering and solving complex problems in code and in games (I love puzzle games!).</p>
                     <p>As an educator and researcher I am passionate about reflecting on my work and continuing to learn and improve my code to keep up with best practices in accessibility and user experience. </p>
                     <p>Outside of coding I typically waste away my day binging shows on netflix and playing video games, usually Maplestory or League of Legends, but my favourite game of all time would have to be Portal 2. Some of my other interests include puzzles, anime, and reading. </p>
                 </div>
                 <div class="aboutImgContainer">
-                    <img src="./assets/mandeep.jpg" alt="a picture...of ME?!?! maybe...">
+                    <img src="./assets/mandeep.jpg" alt="a drawing of Mandeep Mann">
                 </div>
             </div>
         </section>
@@ -144,7 +144,7 @@
                     <li>
                         <div class="projectContainer">
                             <div class="projectImgContainer">
-                                <img src="./assets/raccoonRanker.png" alt="Macbook and iPhone mockup of Web Dev in Progress project">
+                                <img src="./assets/raccoonRanker.png" alt="Macbook and iPhone mockup of Raccoon Ranker project">
                             </div>
                             <div class="projectTextOverlay">
                                 <h3>Raccoon Ranker</h3>
@@ -287,9 +287,24 @@
                 <div class="contactFlex">
                     <div class="contactInfo">
                         <ul class="contactLinks">
-                            <li><a href="mailto:mandeepkrmann@gmail.com"><i class="fa-sharp fa-solid fa-envelope"></i></a></li>
-                            <li><a href="https://github.com/MandeepKMann"><i class="fa-brands fa-github"></i></a></li>
-                            <li><a href="https://www.linkedin.com/in/mandeepkmann/"><i class="fa-brands fa-linkedin"></i></a></li>
+                            <li>
+                                <a href="mailto:mandeepkrmann@gmail.com" aria-label="Email Mandeep Mann">
+                                    <i class="fa-sharp fa-solid fa-envelope"></i>
+                                    <span class="sr-only">Email</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://github.com/MandeepKMann" aria-label="Mandeep Mann's GitHub Profile">
+                                    <i class="fa-brands fa-github"></i>
+                                    <span class="sr-only">GitHub</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://www.linkedin.com/in/mandeepkmann/" aria-label="Mandeep Mann's LinkedIn Profile">
+                                    <i class="fa-brands fa-linkedin"></i>
+                                    <span class="sr-only">LinkedIn</span>
+                                </a>
+                            </li>
                         </ul>
                     </div>
     

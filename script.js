@@ -113,7 +113,6 @@ portfolio.typewriter = () => {
 portfolio.toContact = () => {
     const contactScroll = document.querySelector('.toContact')
     const contactSection = document.querySelector('#contact')
-    const nav = document.querySelector('.mainNav');
 
     contactScroll.addEventListener('click', () => {
         contactSection.scrollIntoView({
@@ -164,7 +163,7 @@ portfolio.clearForm = () => {
 portfolio.scrollToTop = () => {
     const scrollButton = document.createElement('button');
     scrollButton.id = 'toTop'
-    scrollButton.innerHTML = '<span class="material-symbols-outlined">expand_less</span>'
+    scrollButton.innerHTML = '<span class="material-symbols-outlined">keyboard_arrow_up</span>'
     document.body.appendChild(scrollButton);
     
     window.addEventListener('scroll', () => {
