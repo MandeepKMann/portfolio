@@ -2,24 +2,19 @@
 
 .formContainer {
     width: 80%;
-    background-color: variables.$secondBackground;
-    padding: 10px;
-    border-right: 5px solid variables.$lighterShade;
-    border-bottom: 5px solid variables.$lighterShade;
-    border-top: 1px solid variables.$lighterShade;
-    border-left: 1px solid variables.$lighterShade;
-    box-shadow: variables.$lightShade 5px 5px, variables.$mediumShade 10px 10px, variables.$darkShade 15px 15px;
+    background-color: variables.$lighterBlack;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: variables.$purpleOne 0px 0px 0px;
     transition: .7s ease-in-out;
         &:hover,
         &:focus {
-            box-shadow:
-                variables.$lightShade 5px 5px,
-                variables.$mediumShade 10px 10px,
-                variables.$darkShade 15px 15px,
-                variables.$secondaryFontColour 15px 20px 20px;
+            box-shadow: variables.$purpleOne 0px 0px 20px;
+
         }
         h3 {
             margin-top: 0px;
+            color: variables.$purpleOne;
         }
 }
 
@@ -31,10 +26,12 @@ form {
         input {
             padding: 5px 0 5px 15px;
             border: 2px solid variables.$secondaryFontColour;
+            border-radius: 15px;
         }
         textarea {
             resize: none;
             padding: 15px 0 0 15px;
             border: 2px solid variables.$secondaryFontColour;
+            border-radius: 15px;
         }
 }

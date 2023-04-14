@@ -124,6 +124,21 @@ portfolio.toContact = () => {
     });
 };
 
+// Nav smooth scrolling
+portfolio.smoothScroll = () => {
+    const navLinks = document.querySelectorAll('nav a');
+
+
+    navLinks.forEach((link) => {
+        link.addEventListener('click', (e) => {
+            e.preventDefault();
+            const section = document.querySelector(link.getAttribute('href'));
+            section.scrollIntoView({behavior: 'smooth'});
+        })
+    })
+}
+
+
 // Chevron pointing down button that scrolls down to next section (about)
 portfolio.scrollToAbout = () => {
     const headerScroll = document.querySelector('.scrollToAbout')
@@ -181,6 +196,7 @@ portfolio.init = () => {
     portfolio.toContact();
     portfolio.clearForm();
     portfolio.scrollToTop();
+    portfolio.smoothScroll();
 };
 
 portfolio.init();
