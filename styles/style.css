@@ -339,13 +339,10 @@ nav a:hover, nav a:focus {
 }
 
 .projectTextOverlay h3,
-.projectTextOverlay p,
-.tools {
-  text-align: left;
-  padding: 0px 15px 0px 15px;
-  font-weight: bold;
+.projectTextOverlay p {
+  margin: 0px;
+  text-align: center;
 }
-
 .projectTextOverlay a {
   color: #A393FE;
   font-weight: bold;
@@ -787,6 +784,7 @@ nav {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  gap: 15px;
   width: 100%;
   padding: 30px;
   border-radius: 15px;
@@ -844,10 +842,7 @@ nav {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-}
-.projectTextOverlay h3,
-.projectTextOverlay p {
-  text-align: center;
+  gap: 15px;
 }
 .projectTextOverlay .tools {
   display: -webkit-box;
@@ -1190,7 +1185,10 @@ footer {
   }
 }
 @media (max-width: 1000px) {
-  .projectContainer {
+  .portfolioUl {
+    gap: 25px;
+  }
+  .portfolioUl .projectContainer {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
@@ -1198,20 +1196,41 @@ footer {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
+    width: 100%;
+    height: 100%;
   }
-  .projectContainer .projectImgContainer {
+  .portfolioUl .projectContainer .projectImgContainer {
     width: 100%;
   }
-  .projectContainer .projectTextOverlay p {
+  .portfolioUl .projectContainer .projectTextOverlay p {
     text-align: center;
   }
 }
-@media (max-width: 600px) {
-  .projectLinks {
+@media (max-width: 800px) {
+  .portfolio {
+    margin: 10px 15px;
+  }
+  .portfolioUl {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+  }
+  .portfolioUl li {
+    width: 100%;
+  }
+}
+@media (max-width: 400px) {
+  .projectTextOverlay h3 {
+    font-size: 1rem;
+  }
+  .projectTextOverlay p,
+  .projectTextOverlay a,
+  .projectTextOverlay .tools li {
+    font-size: 0.8rem;
+  }
+  .projectTextOverlay .button {
+    width: 80px;
   }
 }
 @media (max-width: 800px) {

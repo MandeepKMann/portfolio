@@ -102,17 +102,17 @@ nav a {
     color: variables.$white;
 }
 
-.projectTextOverlay h3,
-.projectTextOverlay p,
-.tools {
-    text-align: left;
-    padding: 0px 15px 0px 15px;
-    font-weight: bold;
-}
-
-.projectTextOverlay a {
-    color: variables.$purpleOne;
-    font-weight: bold;
+.projectTextOverlay {
+    h3,
+    p {
+        margin: 0px;
+        text-align: center;
+    }
+    
+    a {
+        color: variables.$purpleOne;
+        font-weight: bold;
+    }
 }
 
 .projectLinks a {

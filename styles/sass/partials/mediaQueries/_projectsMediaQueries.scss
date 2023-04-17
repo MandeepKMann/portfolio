@@ -1,20 +1,50 @@
 @use '../variables';
 
 @media (max-width: 1000px) {
-    .projectContainer {
-        flex-direction: column;
-        align-items: center;
-            .projectImgContainer {
+    .portfolioUl {
+        gap: 25px;
+            .projectContainer {
+                flex-direction: column;
+                align-items: center;
                 width: 100%;
-            }
-            .projectTextOverlay p{
-                text-align: center;
+                height: 100%;
+                    .projectImgContainer {
+                        width: 100%;
+                    }
+                    .projectTextOverlay p{
+                        text-align: center;
+                    }
             }
     }
 }
 
-@media (max-width: 600px) {
-    .projectLinks {
+@media (max-width: 800px) {
+    .portfolio {
+        margin: 10px 15px;
+    }
+
+    .portfolioUl {
         flex-direction: column;
+            li {
+                width: 100%;
+            }
+    }
+}
+
+@media (max-width: 400px) {
+    .projectTextOverlay {
+        h3 {
+            font-size: 1rem;
+        }
+
+        p,
+        a,
+        .tools li {
+            font-size: 0.8rem;
+        }
+
+        .button {
+            width: 80px;
+        }
     }
 }
