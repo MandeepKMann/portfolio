@@ -16,6 +16,10 @@
         position: relative;
     }
 
+    .hamburgerMenu {
+        background-color: rgba(variables.$black, 0);
+    }
+
     .navFlex {
         .navUl {
             display: none;
@@ -52,14 +56,12 @@
         display: flex;
         justify-content: flex-end;
         align-self: center;
-        background-color: variables.$black;
         border: none;
             .hamburgerIcon {
                 align-items: center;
                 font-size: 3rem;
                 cursor: pointer;
                 color: variables.$white;
-                background-color: variables.$black;
             }
             .closeIcon {
                 display: none;
