@@ -1,6 +1,9 @@
 @use '../variables';
 
 @media (max-width: 800px) {
+    .skills {
+        margin: 10px 15px;
+    }
     .skillsUl {
         grid-template-columns: repeat(3, 1fr);
         row-gap: 60px;

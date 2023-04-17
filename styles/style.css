@@ -284,6 +284,7 @@ h1 {
 h2 {
   color: #FEFEFE;
   font-size: 2.5rem;
+  margin-top: 0px;
 }
 
 .projects h3 {
@@ -328,8 +329,9 @@ nav a:hover, nav a:focus {
   color: #A393FE;
 }
 
-.about p {
-  font-weight: bold;
+.about p,
+.about h3 {
+  margin: 10px 0px;
 }
 
 .highlight {
@@ -392,7 +394,7 @@ body {
 }
 
 section {
-  padding: 100px 0 100px 0;
+  padding: 75px 0px;
 }
 
 button {
@@ -695,10 +697,7 @@ nav {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  gap: 50px;
+  gap: 30px;
 }
 .aboutFlex .aboutTextContainer {
   display: -webkit-box;
@@ -1003,6 +1002,11 @@ footer {
   border-top: 1px solid rgba(254, 254, 254, 0.1);
 }
 
+@media (max-width: 800px) {
+  section {
+    padding: 50px 0px;
+  }
+}
 @media (max-width: 630px) {
   #toTop.active {
     display: none;
@@ -1149,29 +1153,26 @@ footer {
             flex-direction: column;
   }
   .aboutFlex .aboutTextContainer {
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
     width: 100%;
   }
-  .aboutFlex .aboutTextContainer h4 {
-    text-align: center;
-  }
   .aboutFlex .aboutImgContainer {
-    -webkit-box-ordinal-group: 0;
-        -ms-flex-order: -1;
-            order: -1;
     width: 60%;
     -ms-flex-item-align: center;
         align-self: center;
   }
 }
 @media (max-width: 800px) {
+  .about {
+    margin: 10px 15px;
+  }
   .aboutFlex .aboutImgContainer {
     width: 100%;
   }
 }
 @media (max-width: 800px) {
+  .skills {
+    margin: 10px 15px;
+  }
   .skillsUl {
     grid-template-columns: repeat(3, 1fr);
     row-gap: 60px;

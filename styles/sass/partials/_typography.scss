@@ -43,6 +43,7 @@ h1 {
 h2 {
     color: variables.$white;
     font-size: 2.5rem;
+    margin-top: 0px;
 }
 
 .projects h3 {
@@ -92,8 +93,9 @@ nav a {
     color: variables.$purpleOne;
 }
 
-.about p {
-    font-weight: bold;
+.about p,
+.about h3 {
+    margin: 10px 0px;
 }
 
 .highlight {
