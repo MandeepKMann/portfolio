@@ -15,60 +15,68 @@
     header {
         position: relative;
     }
-    .navFlex {
-        .navUl {
-            display: none;
-            flex-direction: column;
-            align-self: center;
-            width: 100%;
-            height: 100vh;
-            position: absolute;
-            top: 61px;
-            left: 0px;
-            background-color: variables.$baseFontColour;
-        }
-        
-        .navUl.active {
-            display: flex;
-            justify-content: flex-start;
-                a {
-                    display: block;
-                    text-decoration: none;
-                    align-items: center;
-                    font-size: 2rem;
-                    margin: 50% 0;
+
+    nav {
+        background-color: variables.$black;
+
+            .navFlex {
+                .navUl {
+                    display: none;
+                    flex-direction: column;
+                    align-self: center;
+                    width: 50%;
+                    height: 100vh;
+                    position: absolute;
+                    top: 62px;
+                    right: 0px;
+                    background-color: variables.$black;
+                    border-left: 1px solid rgba(variables.$white, 0.1);
                 }
-            
-        }
+                
+                .navUl.active {
+                    display: flex;
+                    justify-content: flex-start;
+                        a {
+                            display: block;
+                            text-decoration: none;
+                            align-items: center;
+                            font-size: 2rem;
+                            margin: 50% 0;
+                        }
+                    
+                }
+            }
+        
+            .navFlex .hamburgerMenu {
+                display: flex;
+                justify-content: flex-end;
+                align-self: center;
+                background-color: variables.$black;
+                border: none;
+                    .hamburgerIcon {
+                        align-items: center;
+                        font-size: 3rem;
+                        cursor: pointer;
+                        color: variables.$white;
+                    }
+                    .closeIcon {
+                        display: none;
+                        align-items: center;
+                        font-size: 3rem;
+                        cursor: pointer;
+                        color: variables.$white;
+                    }
+                    .hamburgerIcon.active {
+                        display: none;
+                    }
+                    .closeIcon.active {
+                        display: block;
+                    }
+            }
     }
 
-    .navFlex .hamburgerMenu {
-        display: flex;
-        justify-content: flex-end;
-        align-self: center;
-        background-color: variables.$black;
-        border: none;
-            .hamburgerIcon {
-                align-items: center;
-                font-size: 3rem;
-                cursor: pointer;
-                color: variables.$white;
-            }
-            .closeIcon {
-                display: none;
-                align-items: center;
-                font-size: 3rem;
-                cursor: pointer;
-                color: variables.$mainBackground;
-            }
-            .hamburgerIcon.active {
-                display: none;
-            }
-            .closeIcon.active {
-                display: block;
-            }
-    }
 }
+
 
 @media (max-width: 600px) {
     h1 {
@@ -79,5 +87,40 @@
 @media (max-width: 500px) {
     h1 {
         font-size: 2.5rem;
+    }
+
+    .toContact {
+        &:hover .arrow {
+            width: 20%;
+        }
+        .arrow {
+            width: 10%;
+        }
+    }
+}
+
+@media (max-width: 430px) {
+    h1 {
+        font-size: 2rem;
+    }
+
+    .hero {
+        p {
+            font-size: 1rem;
+        }
+    }
+}
+
+@media (max-width: 380px) {
+    .toContact {
+       .head,
+       .arrow {
+        display: none;
+       }
+
+       &:hover,
+       &:focus {
+        color: variables.$purpleOne;
+       }
     }
 }
