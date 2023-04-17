@@ -19,31 +19,30 @@ portfolio.hamburgerMenu = () => {
     const closeIcon = document.querySelector('.closeIcon');
     const hamburgerIcon = document.querySelector('.hamburgerIcon');
     const menu = document.querySelector('.hamburgerMenu');
-    const navLinks = document.querySelectorAll('.navUl a')
+    const hambugerLinks = document.querySelectorAll('.navUl a')
 
+    const toggleMenu = () => {
+        navUl.classList.toggle('active');
+        hamburgerIcon.classList.toggle('active');
+        closeIcon.classList.toggle('active');
+    };
+    
+    menu.addEventListener('click', toggleMenu);
     
     if (window.innerWidth <= 800) {
-        navLinks.forEach(link => {
-            link.classList.add('hamburgerLinks')
-        })
-        const hambugerLinks = document.querySelectorAll('.hamburgerLinks')
-        const toggleMenu = () => {
-            navUl.classList.toggle('active');
-            hamburgerIcon.classList.toggle('active');
-            closeIcon.classList.toggle('active');
-        };
-        menu.addEventListener('click', toggleMenu);
-        
-        
+        // closes hamburger menu when a link is clicked
         hambugerLinks.forEach(link => {
             link.addEventListener('click', toggleMenu);
         });
-    } else if (window.innerWidth > 800){
-        navLinks.forEach(link => {
-            link.classList.remove('hamburgerLinks')
-            
-        })
     }
+
+    // closes menu when user clicks outside of the menu
+    const handleOutsideClick = (e) => {
+        if (!menu.contains(e.target) && (!navUl.contains(e.target))) {
+            toggleMenu();
+        }
+    }
+    document.addEventListener('click', handleOutsideClick);
 
 };
 

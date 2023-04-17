@@ -1020,10 +1020,7 @@ footer {
   header {
     position: relative;
   }
-  nav {
-    background-color: #0B080B;
-  }
-  nav .navFlex .navUl {
+  .navFlex .navUl {
     display: none;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -1031,7 +1028,7 @@ footer {
             flex-direction: column;
     -ms-flex-item-align: center;
         align-self: center;
-    width: 50%;
+    width: 40%;
     height: 100vh;
     position: absolute;
     top: 62px;
@@ -1039,7 +1036,7 @@ footer {
     background-color: #0B080B;
     border-left: 1px solid rgba(254, 254, 254, 0.1);
   }
-  nav .navFlex .navUl.active {
+  .navFlex .navUl.active {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -1047,16 +1044,19 @@ footer {
         -ms-flex-pack: start;
             justify-content: flex-start;
   }
-  nav .navFlex .navUl.active a {
+  .navFlex .navUl.active li {
+    width: 100%;
+  }
+  .navFlex .navUl.active li a {
     display: block;
     text-decoration: none;
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    font-size: 2rem;
-    margin: 50% 0;
+    font-size: 1.4rem;
+    width: 100%;
   }
-  nav .navFlex .hamburgerMenu {
+  .navFlex .hamburgerMenu {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -1068,15 +1068,16 @@ footer {
     background-color: #0B080B;
     border: none;
   }
-  nav .navFlex .hamburgerMenu .hamburgerIcon {
+  .navFlex .hamburgerMenu .hamburgerIcon {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
     font-size: 3rem;
     cursor: pointer;
     color: #FEFEFE;
+    background-color: #0B080B;
   }
-  nav .navFlex .hamburgerMenu .closeIcon {
+  .navFlex .hamburgerMenu .closeIcon {
     display: none;
     -webkit-box-align: center;
         -ms-flex-align: center;
@@ -1085,10 +1086,10 @@ footer {
     cursor: pointer;
     color: #FEFEFE;
   }
-  nav .navFlex .hamburgerMenu .hamburgerIcon.active {
+  .navFlex .hamburgerMenu .hamburgerIcon.active {
     display: none;
   }
-  nav .navFlex .hamburgerMenu .closeIcon.active {
+  .navFlex .hamburgerMenu .closeIcon.active {
     display: block;
   }
 }
@@ -1113,6 +1114,20 @@ footer {
     font-size: 2rem;
   }
   .hero p {
+    font-size: 1rem;
+  }
+  .navFlex .navUl.active {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+  }
+  .navFlex .navUl.active li {
+    width: 100%;
+  }
+  .navFlex .navUl.active li a {
     font-size: 1rem;
   }
 }

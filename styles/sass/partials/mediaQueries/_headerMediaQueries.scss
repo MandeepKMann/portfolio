@@ -16,65 +16,65 @@
         position: relative;
     }
 
-    nav {
-        background-color: variables.$black;
-
-            .navFlex {
-                .navUl {
-                    display: none;
-                    flex-direction: column;
-                    align-self: center;
-                    width: 50%;
-                    height: 100vh;
-                    position: absolute;
-                    top: 62px;
-                    right: 0px;
-                    background-color: variables.$black;
-                    border-left: 1px solid rgba(variables.$white, 0.1);
-                }
-                
-                .navUl.active {
-                    display: flex;
-                    justify-content: flex-start;
+    .navFlex {
+        .navUl {
+            display: none;
+            flex-direction: column;
+            align-self: center;
+            width: 40%;
+            height: 100vh;
+            position: absolute;
+            top: 62px;
+            right: 0px;
+            background-color: variables.$black;
+            border-left: 1px solid rgba(variables.$white, 0.1);
+        }
+        
+        .navUl.active {
+            display: flex;
+            justify-content: flex-start;
+                li {
+                   width: 100%; 
                         a {
                             display: block;
                             text-decoration: none;
                             align-items: center;
-                            font-size: 2rem;
-                            margin: 50% 0;
+                            font-size: 1.4rem;
+                            width: 100%;
+
                         }
-                    
                 }
-            }
-        
-            .navFlex .hamburgerMenu {
-                display: flex;
-                justify-content: flex-end;
-                align-self: center;
-                background-color: variables.$black;
-                border: none;
-                    .hamburgerIcon {
-                        align-items: center;
-                        font-size: 3rem;
-                        cursor: pointer;
-                        color: variables.$white;
-                    }
-                    .closeIcon {
-                        display: none;
-                        align-items: center;
-                        font-size: 3rem;
-                        cursor: pointer;
-                        color: variables.$white;
-                    }
-                    .hamburgerIcon.active {
-                        display: none;
-                    }
-                    .closeIcon.active {
-                        display: block;
-                    }
-            }
+            
+        }
     }
 
+    .navFlex .hamburgerMenu {
+        display: flex;
+        justify-content: flex-end;
+        align-self: center;
+        background-color: variables.$black;
+        border: none;
+            .hamburgerIcon {
+                align-items: center;
+                font-size: 3rem;
+                cursor: pointer;
+                color: variables.$white;
+                background-color: variables.$black;
+            }
+            .closeIcon {
+                display: none;
+                align-items: center;
+                font-size: 3rem;
+                cursor: pointer;
+                color: variables.$white;
+            }
+            .hamburgerIcon.active {
+                display: none;
+            }
+            .closeIcon.active {
+                display: block;
+            }
+    }
 }
 
 
@@ -107,6 +107,19 @@
     .hero {
         p {
             font-size: 1rem;
+        }
+    }
+
+    .navFlex {
+        .navUl.active {
+            display: flex;
+            justify-content: flex-start;
+                li {
+                    width: 100%;
+                    a {
+                        font-size: 1rem;
+                    }
+                }
         }
     }
 }
