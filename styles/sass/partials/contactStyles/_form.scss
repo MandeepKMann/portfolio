@@ -43,6 +43,7 @@ form {
             background-color: variables.$white;
             font-weight: bold;
             border: 2px solid variables.$purpleOne;
+            transition: 0.7s;
                 &:hover,
                 &:focus {
                     background-color: variables.$purpleOne;

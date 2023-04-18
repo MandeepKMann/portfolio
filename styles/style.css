@@ -302,6 +302,8 @@ h4 {
 
 .skill i {
   font-size: 5rem;
+  -webkit-transition: 0.7s;
+  transition: 0.7s;
 }
 .skill i:hover, .skill i:focus {
   color: #A393FE;
@@ -309,6 +311,8 @@ h4 {
 
 nav a {
   color: #FEFEFE;
+  -webkit-transition: 0.7s;
+  transition: 0.7s;
 }
 nav a:hover, nav a:focus {
   color: #A393FE;
@@ -350,6 +354,8 @@ nav a:hover, nav a:focus {
 
 .projectLinks a {
   background-color: #FAF5FF;
+  -webkit-transition: 0.7s;
+  transition: 0.7s;
 }
 .projectLinks a:hover, .projectLinks a:focus {
   background-color: #FFF398;
@@ -359,6 +365,8 @@ nav a:hover, nav a:focus {
   color: #FEFEFE;
   font-size: 3rem;
   padding: 10px;
+  -webkit-transition: 0.7s;
+  transition: 0.7s;
 }
 .contactLinks a:hover, .contactLinks a:focus {
   color: #A393FE;
@@ -985,6 +993,8 @@ form button {
   background-color: #FEFEFE;
   font-weight: bold;
   border: 2px solid #A393FE;
+  -webkit-transition: 0.7s;
+  transition: 0.7s;
 }
 form button:hover, form button:focus {
   background-color: #A393FE;
@@ -1249,15 +1259,20 @@ footer {
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
             flex-direction: row;
-    -webkit-box-pack: end;
-        -ms-flex-pack: end;
-            justify-content: flex-end;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
     gap: 10px;
   }
   .contactFlex .contactInfo .contactLinks i {
     font-size: 2rem;
   }
   .contactFlex .formContainer {
+    width: 100%;
+  }
+}
+@media (max-width: 600px) {
+  form button {
     width: 100%;
   }
 }

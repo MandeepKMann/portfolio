@@ -18,16 +18,23 @@ portfolio.hamburgerMenu = () => {
     const navUl = document.querySelector('.navUl')
     const closeIcon = document.querySelector('.closeIcon');
     const hamburgerIcon = document.querySelector('.hamburgerIcon');
-    const menu = document.querySelector('.hamburgerMenu');
+    const menuButton = document.querySelector('.hamburgerMenu');
     const hambugerLinks = document.querySelectorAll('.navUl a')
 
+    // toggles the 'active' class UNLESS the window width is above 800px
     const toggleMenu = () => {
+    if (window.innerWidth > 800 && navUl.classList.contains('active')) {
+        navUl.classList.remove('active');
+        hamburgerIcon.classList.remove('active');
+        closeIcon.classList.remove('active');
+    } else {
         navUl.classList.toggle('active');
         hamburgerIcon.classList.toggle('active');
         closeIcon.classList.toggle('active');
+    }
     };
     
-    menu.addEventListener('click', toggleMenu);
+    menuButton.addEventListener('click', toggleMenu);
     
     if (window.innerWidth <= 800) {
         // closes hamburger menu when a link is clicked
@@ -36,9 +43,15 @@ portfolio.hamburgerMenu = () => {
         });
     }
 
+    window.addEventListener('resize', () => {
+        if (window.innerWidth > 800 && navUl.classList.contains('active')) {
+            toggleMenu();
+        }
+    });
+
     // closes menu when user clicks outside of the menu
     const handleOutsideClick = (e) => {
-        if (!menu.contains(e.target) && (!navUl.contains(e.target))) {
+        if (!menuButton.contains(e.target) && !navUl.contains(e.target) && navUl.classList.contains('active')) {
             toggleMenu();
         }
     }

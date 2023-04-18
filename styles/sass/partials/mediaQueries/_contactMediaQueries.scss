@@ -8,7 +8,7 @@
                     .contactLinks {
                         width: 100%;
                         flex-direction: row;
-                        justify-content: flex-end;
+                        justify-content: flex-start;
                         gap: 10px;
                             i {
                                 font-size: 2rem;
@@ -20,4 +20,10 @@
             }
     }
 
+}
+
+@media (max-width: 600px) {
+    form button {
+        width: 100%;
+    }
 }

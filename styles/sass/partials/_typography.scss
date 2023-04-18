@@ -61,6 +61,7 @@ h4 {
 
 .skill i {
     font-size: 5rem;
+    transition: 0.7s;
         &:hover,
         &:focus {
             color: variables.$purpleOne;
@@ -70,6 +71,7 @@ h4 {
 
 nav a {
     color: variables.$white;
+    transition: 0.7s;
         &:hover,
         &:focus {
             color: variables.$purpleOne;
@@ -117,16 +119,18 @@ nav a {
 
 .projectLinks a {
     background-color: variables.$secondBackground;
-    &:hover,
-    &:focus {
-        background-color: variables.$linksFontColour;
-    }
+    transition: 0.7s;
+        &:hover,
+        &:focus {
+            background-color: variables.$linksFontColour;
+        }
 }
 
 .contactLinks a {
     color: variables.$baseFontColour;
     font-size: 3rem;
     padding: 10px;
+    transition: 0.7s;
         &:hover,
         &:focus {
             color: variables.$purpleOne;
