@@ -1141,7 +1141,7 @@ footer {
     font-size: 1rem;
   }
 }
-@media (max-width: 380px) {
+@media (max-width: 400px) {
   .toContact .head,
   .toContact .arrow {
     display: none;
