@@ -23,15 +23,15 @@ portfolio.hamburgerMenu = () => {
 
     // toggles the 'active' class UNLESS the window width is above 800px
     const toggleMenu = () => {
-    if (window.innerWidth > 800 && navUl.classList.contains('active')) {
-        navUl.classList.remove('active');
-        hamburgerIcon.classList.remove('active');
-        closeIcon.classList.remove('active');
-    } else {
-        navUl.classList.toggle('active');
-        hamburgerIcon.classList.toggle('active');
-        closeIcon.classList.toggle('active');
-    }
+        if (window.innerWidth > 800 && navUl.classList.contains('active')) {
+            navUl.classList.remove('active');
+            hamburgerIcon.classList.remove('active');
+            closeIcon.classList.remove('active');
+        } else {
+            navUl.classList.toggle('active');
+            hamburgerIcon.classList.toggle('active');
+            closeIcon.classList.toggle('active');
+        }
     };
     
     menuButton.addEventListener('click', toggleMenu);
