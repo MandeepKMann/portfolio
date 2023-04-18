@@ -22,32 +22,39 @@ form {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    gap: 15px;    
+    gap: 15px;  
         input {
             padding: 5px 0 5px 15px;
             border: 2px solid variables.$purpleOne;
             border-radius: 15px;
+            background-color: variables.$lighterBlack;
+            color: variables.$white;
+            font-weight: bold;
         }
         textarea {
             resize: none;
             padding: 15px 0 0 15px;
             border: 2px solid variables.$purpleOne;
             border-radius: 15px;
+            background-color: variables.$lighterBlack;
+            color: variables.$white;
+            font-weight: bold;
         }
 
         button {
             width: 200px;
             height: 60px;
             border-radius: 30px;
-            color: variables.$black;
-            background-color: variables.$white;
-            font-weight: bold;
+            background-color: variables.$lighterBlack;
+            color: variables.$white;
             border: 2px solid variables.$purpleOne;
-            transition: 0.7s;
+            font-weight: bold;
+            transition: 0.7s ease-in-out;
+
                 &:hover,
                 &:focus {
-                    background-color: variables.$purpleOne;
-                    color: variables.$white;
+                    border: 2px solid variables.$purpleOne;
+                    box-shadow: variables.$purpleOne 0px 0px 20px;
                 }
         }
 }

@@ -23,6 +23,7 @@
     align-items: center;
     gap: 15px;
     width: 100%;
+    height: 100%;
     padding: 30px;
     border-radius: 15px;
     background-color: variables.$lighterBlack;
@@ -76,17 +77,19 @@
     gap: 20px;
 
         .button {
-                background-color: variables.$white;
-                color: variables.$black;
+                background-color: variables.$lighterBlack;
+                color: variables.$white;
+                border: 2px solid variables.$white;
                 padding: 10px;
                 border-radius: 30px;
                 width: 100px;
                 text-align: center;
+                transition:  0.7s ease-in-out;
 
                 &:hover,
                 &:focus {
-                    color: variables.$white;
-                    background-color: variables.$purpleOne;
+                    border: 2px solid variables.$purpleOne;
+                    box-shadow: variables.$purpleOne 0px 0px 20px;
                 }
         }
 }

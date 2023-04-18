@@ -22,7 +22,9 @@ h4,
 h5,
 a,
 p,
-button {
+button,
+input,
+textarea {
     font-family: variables.$bodyFont;
     font-weight: normal;
 }
@@ -117,15 +119,6 @@ nav a {
     }
 }
 
-.projectLinks a {
-    background-color: variables.$secondBackground;
-    transition: 0.7s;
-        &:hover,
-        &:focus {
-            background-color: variables.$linksFontColour;
-        }
-}
-
 .contactLinks a {
     color: variables.$baseFontColour;
     font-size: 3rem;
@@ -135,9 +128,6 @@ nav a {
         &:focus {
             color: variables.$purpleOne;
         }
-}
-.formContainer h3 {
-    color: variables.$secondaryFontColour;
 }
 
 footer p {

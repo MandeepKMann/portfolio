@@ -260,7 +260,9 @@ h4,
 h5,
 a,
 p,
-button {
+button,
+input,
+textarea {
   font-family: "Mulish";
   font-weight: normal;
 }
@@ -352,15 +354,6 @@ nav a:hover, nav a:focus {
   font-weight: bold;
 }
 
-.projectLinks a {
-  background-color: #FAF5FF;
-  -webkit-transition: 0.7s;
-  transition: 0.7s;
-}
-.projectLinks a:hover, .projectLinks a:focus {
-  background-color: #FFF398;
-}
-
 .contactLinks a {
   color: #FEFEFE;
   font-size: 3rem;
@@ -370,10 +363,6 @@ nav a:hover, nav a:focus {
 }
 .contactLinks a:hover, .contactLinks a:focus {
   color: #A393FE;
-}
-
-.formContainer h3 {
-  color: #ff69b4;
 }
 
 footer p {
@@ -794,6 +783,7 @@ nav {
           align-items: center;
   gap: 15px;
   width: 100%;
+  height: 100%;
   padding: 30px;
   border-radius: 15px;
   background-color: #1E1E20;
@@ -884,16 +874,20 @@ nav {
   gap: 20px;
 }
 .projectLinks .button {
-  background-color: #FEFEFE;
-  color: #0B080B;
+  background-color: #1E1E20;
+  color: #FEFEFE;
+  border: 2px solid #FEFEFE;
   padding: 10px;
   border-radius: 30px;
   width: 100px;
   text-align: center;
+  -webkit-transition: 0.7s ease-in-out;
+  transition: 0.7s ease-in-out;
 }
 .projectLinks .button:hover, .projectLinks .button:focus {
-  color: #FEFEFE;
-  background-color: #A393FE;
+  border: 2px solid #A393FE;
+  -webkit-box-shadow: #A393FE 0px 0px 20px;
+          box-shadow: #A393FE 0px 0px 20px;
 }
 
 .contactFlex {
@@ -978,27 +972,34 @@ form input {
   padding: 5px 0 5px 15px;
   border: 2px solid #A393FE;
   border-radius: 15px;
+  background-color: #1E1E20;
+  color: #FEFEFE;
+  font-weight: bold;
 }
 form textarea {
   resize: none;
   padding: 15px 0 0 15px;
   border: 2px solid #A393FE;
   border-radius: 15px;
+  background-color: #1E1E20;
+  color: #FEFEFE;
+  font-weight: bold;
 }
 form button {
   width: 200px;
   height: 60px;
   border-radius: 30px;
-  color: #0B080B;
-  background-color: #FEFEFE;
-  font-weight: bold;
+  background-color: #1E1E20;
+  color: #FEFEFE;
   border: 2px solid #A393FE;
-  -webkit-transition: 0.7s;
-  transition: 0.7s;
+  font-weight: bold;
+  -webkit-transition: 0.7s ease-in-out;
+  transition: 0.7s ease-in-out;
 }
 form button:hover, form button:focus {
-  background-color: #A393FE;
-  color: #FEFEFE;
+  border: 2px solid #A393FE;
+  -webkit-box-shadow: #A393FE 0px 0px 20px;
+          box-shadow: #A393FE 0px 0px 20px;
 }
 
 footer {
@@ -1207,7 +1208,6 @@ footer {
         -ms-flex-align: center;
             align-items: center;
     width: 100%;
-    height: 100%;
   }
   .portfolioUl .projectContainer .projectImgContainer {
     width: 100%;
